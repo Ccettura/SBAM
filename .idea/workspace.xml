@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02a3c75b-0cd7-4817-99cd-8e4d854b5898" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="02a3c75b-0cd7-4817-99cd-8e4d854b5898" name="Default Changelist" comment="Versione 0">
+      <change afterPath="$PROJECT_DIR$/Sito/main.html" afterDir="false" />
     </list>
-    <list id="af0af745-7848-46cd-a23c-3ea26a674e45" name="Changes by nikka" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,8 +57,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619453906783</updated>
-      <workItem from="1619453911075" duration="534000" />
+      <workItem from="1619453911075" duration="852000" />
     </task>
+    <task id="LOCAL-00001" summary="Versione 0">
+      <created>1619454482720</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1619454482720</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -77,5 +82,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Versione 0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Versione 0" />
   </component>
 </project>
