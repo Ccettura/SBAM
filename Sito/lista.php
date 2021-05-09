@@ -1,36 +1,38 @@
 <?php
-include 'connessione.php';
-$conn = OpenCon();
-$query = "select * from libro";
-$result = mysqli_query($conn,$query);
-if (!$result) {
-    echo 'Impossibile eseguire la query: '.mysqli_error();
-    exit;
-}
-
-include 'header.php';
+   include 'connessione.php';
 ?>
-
+<html>
+<head>
+</head>
 <body>
-<table align="center" border="1px" style="line-height:40px;">
-    <tr>
-        <th> Titolo </th>
-        <th> Copertina </th>
-        <th> Data di pubblicazione </th>
-    </tr>
+<form action="search.php" method="POST">
+    <input type="text" name="search" placeholder="Search">
+    <button type="submit" name="submit"></button>
+</form>
 
-    <?php while($row=mysqli_fetch_assoc($result))
-    {
-        ?>
-        <tr>
-            <td> <?php echo $row['titolo']; ?> </td>
-            <td> <img src="copertine/<?php echo $row['copertina']; ?>" /> </td>
-            <td> <?php echo $row['dataPubblicazione']; ?></td>
-        </tr>
-        <?php
-    }
-    ?>
+<h1> Lista di Libri: </h1>
 
-</table>
+<div class="libri-container">
+     <?php
+         $conn= OpenCon();
+         $sql = "SELECT * FROM libro";
+         $result =mysqli_query($conn,$sql);
+         $queryResults = mysqli_num_rows($result);
+
+         if($queryResults > 0){
+             while($row = mysqli_fetch_Assoc($result)){
+                 echo " <div>
+                         <h3>".$row['titolo']."</h3>
+                         <h3>".$row['copertina']."</h3>
+                         <h3>".$row['autori']."</h3>
+                         <h3>".$row['descrizione']."</h3>
+                         <h3>".$row['dataPubblicazione']."</h3>
+                         <h3>".$row['editore']."</h3>
+                         <h3>".$row['doveAcquistare']."</h3>
+                       </div>";
+             }
+         }
+         ?>
+</div>
 </body>
 </html>
