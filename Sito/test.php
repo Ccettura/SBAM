@@ -1,5 +1,5 @@
 <?php
-include 'lista.php';
+include 'connessione.php';
 $conn = OpenCon();
 $query = "select * from Libro";
 $result = mysqli_query($conn,$query);
