@@ -9,13 +9,11 @@ if (!$result) {
     exit;
 }
 $row = mysqli_fetch_row($result);
+
+include 'header.php';
 ?>
 
-<!DOCTYPE html>
-<html lang="it-IT">
-<head>
-    <title> Visualizzazione libro </title>
-</head>
+
 <body>
 <table align="center" border="1px" style="line-height:40px;">
     <tr>

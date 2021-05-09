@@ -7,12 +7,10 @@ if (!$result) {
     echo 'Impossibile eseguire la query: '.mysqli_error();
     exit;
 }
+
+include 'header.php';
 ?>
 
-<html>
-<head>
-    <title> Fetch Data From Database </title>
-</head>
 <body>
 <table align="center" border="1px" style="line-height:40px;">
     <tr>
