@@ -1,0 +1,102 @@
+html{background-color: #222}
+
+body{font-family: 'Inter', sans-serif;}
+
+/*! Stili scritte */
+
+a{text-decoration: none} /*! Link senza sottolineatura */
+
+h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
+
+.titoli{font-size: 60px; color: white;}
+.sottotitoli{font-size: 40px;}
+.paragrafi{font-size: 20px;}
+
+.giallo{}
+
+
+/*! Barra Superiore */
+
+.header{
+    background: #2a2a2e;
+}
+
+.contenuto_header{
+    width: 60%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo{
+    align-items: center;
+    display: block;
+}
+
+.menu{
+    width: 100%;
+    text-align: right;
+}
+
+.menu li{display: inline-block;}
+.menu li a{color: gray; padding: 15px; display: block;}
+
+
+/*! Sfondo */
+
+.background{
+    height: 400px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    background: url("sfondo.png")  center center;
+    background-size: cover;
+}
+
+.logoSfondo{
+    background: url("LogoSfondo.png")  center center;
+    height: 500px;
+    align-items: center;
+    transform: translateY(-50%) scale(0.5);
+}
+
+.cerca{
+    width: 100%;
+    text-align: center;
+    transform: translateY(-300%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+             box-sizing: border-box;
+}
