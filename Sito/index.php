@@ -25,11 +25,30 @@
     <div class="logoSfondo"></div>
 
     <div class="cerca">
-        <h1 class="titoli">CERCA UN LIBRO O UN FUMETTO</h1>
+
+        <h1 class="sottotitoli giallo">CERCA UN LIBRO O UN FUMETTO</h1>
+
+        <p class="paragrafi">Inserisci il titolo o l'isbn di un libro o fumetto per effettuare la ricerca.</p>
+
         <form action="search.php" method="POST">
-            <input type="text" name="ricerca" placeholder="Cerca un libro o un fumetto">
-            <button type="submit" name="submit-search">Cerca</button>
+            <div class="barra_ricerca">
+                <div><input class="input_codice" type="text" name="ricerca" placeholder=""></div>
+                <div class="mt"></div>
+                <div><button class="button" type="submit" name="submit-search">CERCA</button></div>
+            </div>
         </form>
+
+    </div>
+
+    <div class="bacheca">
+
+        <div class="instazione_bacheca">
+            <h1 class="sottotitoli giallo">ULTIMI ARRIVI</h1>
+            <p class="paragrafi">Dai un'occhiata agli utlimi arrivi.</p>
+        </div>
+
+        <div class=""
+
     </div>
 
 </body>

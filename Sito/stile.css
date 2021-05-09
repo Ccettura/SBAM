@@ -1,6 +1,6 @@
 html{background-color: #222}
 
-body{font-family: 'Inter', sans-serif;}
+body{font-family: 'Cairo', sans-serif;}
 
 /*! Stili scritte */
 
@@ -8,11 +8,14 @@ a{text-decoration: none} /*! Link senza sottolineatura */
 
 h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
 
-.titoli{font-size: 60px; color: white;}
-.sottotitoli{font-size: 40px; color: white;}
+.titoli{font-size: 60px; color: white; font-weight: bold;}
+.sottotitoli{font-size: 30px; color: white; font-weight: lighter;}
 .paragrafi{font-size: 20px; color: white;}
 
-.giallo{}
+.giallo{color: #FDE601}
+.bianco{color: white}
+
+.mt{margin-top: 10px}
 
 
 /*! Barra Superiore */
@@ -64,10 +67,40 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
     transform: translateY(-50%) scale(0.5);
 }
 
+
+/*! Sezione ricerca libro */
+
 .cerca{
     width: 100%;
     text-align: center;
-    transform: translateY(-300%);
+    transform: translateY(-125%);
+}
+
+.barra_ricerca{
+    display: block;
+}
+
+.input_codice{
+    padding: 1em 15em;
+    text-align: center;
+}
+
+.button{
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #FDE601;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    padding: 1em 7em;
+    color: white;
+    font-size: 13px;
+}
+
+.bacheca{
+    width: 100%;
+    text-align: center;
+    transform: translateY(-125%);
 }
 
 .container{
@@ -91,6 +124,7 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
 }
 
 /* Dettagli sul singolo libro */
+
 .singolo-libro .col img{
     padding: 0;
 }
