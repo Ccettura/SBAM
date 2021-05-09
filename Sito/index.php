@@ -25,7 +25,11 @@
     <div class="logoSfondo"></div>
 
     <div class="cerca">
-        <h1 class="titoli titoli">CERCA UN LIBRO O UN FUMETTO</h1>
+        <h1 class="titoli">CERCA UN LIBRO O UN FUMETTO</h1>
+        <form action="search.php" method="POST">
+            <input type="text" name="ricerca" placeholder="Cerca un libro o un fumetto">
+            <button type="submit" name="submit-search">Cerca</button>
+        </form>
     </div>
 
 </body>

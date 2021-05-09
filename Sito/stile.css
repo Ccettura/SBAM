@@ -9,8 +9,8 @@ a{text-decoration: none} /*! Link senza sottolineatura */
 h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
 
 .titoli{font-size: 60px; color: white;}
-.sottotitoli{font-size: 40px;}
-.paragrafi{font-size: 20px;}
+.sottotitoli{font-size: 40px; color: white;}
+.paragrafi{font-size: 20px; color: white;}
 
 .giallo{}
 
@@ -70,25 +70,34 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
     transform: translateY(-300%);
 }
 
+.container{
+    max-width: 1300px;
+    margin: auto;
+    margin-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
 
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
+.col{
+    flex-basis: 50%;
+    min-width: 300px;
+}
 
+/* Dettagli sul singolo libro */
+.singolo-libro .col img{
+    padding: 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.singolo-libro .col{
+    padding: 20px;
+}
 
 
 

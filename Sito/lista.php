@@ -7,7 +7,7 @@
 <body>
 <form action="search.php" method="POST">
     <input type="text" name="search" placeholder="Search">
-    <button type="submit" name="submit"></button>
+    <button type="submit" name="submit">Cerca</button>
 </form>
 
 <h1> Lista di Libri: </h1>
