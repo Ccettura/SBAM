@@ -5,7 +5,7 @@ $conn = OpenCon();
 $query = "select * from libro where codice=00001";
 $result = mysqli_query($conn,$query);
 if (!$result) {
-    echo 'Impossibile eseguire la query: ' . mysqli_error();
+    echo 'Impossibile eseguire la query: '.mysqli_error();
     exit;
 }
 $row = mysqli_fetch_row($result);
