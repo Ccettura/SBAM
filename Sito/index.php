@@ -30,11 +30,11 @@
 
         <p class="paragrafi">Inserisci il titolo o l'isbn di un libro o fumetto per effettuare la ricerca.</p>
 
-        <form action="search.php" method="POST">
+        <form action="lista.php" method="POST">
             <div class="barra_ricerca">
-                <div><input class="input_codice" type="text" name="ricerca" placeholder=""></div>
+                <div><input class="input_codice" atype="text" name="search" placeholder="Cerca"></div>
                 <div class="mt"></div>
-                <div><button class="button" type="submit" name="submit-search">CERCA</button></div>
+                <div><button class="button" type="submit" name="submit">Cerca</button></div>
             </div>
         </form>
 
