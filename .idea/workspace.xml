@@ -2,9 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02a3c75b-0cd7-4817-99cd-8e4d854b5898" name="Default Changelist" comment="Versione 0">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito/copertine/akira.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito/copertine/goodnight-paradise.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito/copertine/massimo-oleodotto.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito/copertine/un-brutto-weekend.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito/copertine/uomo-delle-valigie.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_05_2021_20_01__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_05_2021_20_01__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito/click.js" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/click.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito/filtroricerca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SBAM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SBAM.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/click.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/libro.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/libro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/lista.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/lista.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/stile.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/stile.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +51,11 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../XAMPP/php/php.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Sito/copertine" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -51,6 +64,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\franc\IdeaProjects\SBAM\Sito\copertine" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
@@ -148,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620657082854</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Versione 0">
+      <created>1620657259600</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1620657259600</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

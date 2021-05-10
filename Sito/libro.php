@@ -1,8 +1,7 @@
 <?php
 include 'connessione.php';
 $conn = OpenCon();
-// $query = "select * from libro where codice=".$_GET['cod'];
-$query = "select * from libro where codice=00001";
+$query = "select * from libro where codice=".$_GET['cod'];
 $result = mysqli_query($conn,$query);
 if (!$result) {
     echo 'Impossibile eseguire la query: '.mysqli_error();
@@ -13,26 +12,6 @@ $row=mysqli_fetch_assoc($result);
 include 'header.php';
 ?>
 
-
-<body>
-
-<!------------BARRA SUPERIORE------------>
-<div class="header">
-    <div class="contenuto_header">
-        <div class="logo">
-            <img src="logo.png" alt="200" height="44">
-        </div>
-
-        <div class="divisore"></div>
-
-        <ul class="menu">
-            <li><a href="">Home</a></li>
-            <li><a href="">Lista</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contatti</a></li>
-        </ul>
-    </div>
-</div>
 
 <!------------DETTAGLI PRODOTTO------------>
 <div class="container singolo-libro">
@@ -48,7 +27,7 @@ include 'header.php';
             <p class="paragrafi">Pagine: <?php echo $row['numeroPagine']; ?></p>
             <p class="paragrafi"><?php echo $row['descrizione']; ?></p>
             <p class="paragrafi">
-                <a href="<?php echo $row['doveAcquistare']; ?>">ACQUISTA</a>
+                <a href="<?php echo $row['doveAcquistare']; ?>" class="button">ACQUISTA</a>
             </p>
         </div>
     </div>

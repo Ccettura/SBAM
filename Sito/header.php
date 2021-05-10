@@ -10,3 +10,22 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css" integrity="sha512-BiFZ6oflftBIwm6lYCQtQ5DIRQ6tm02svznor2GYQOfAlT3pnVJ10xCrU3XuXnUrWQ4EG8GKxntXnYEdKY0Ugg==" crossorigin="anonymous" />
 </head>
+
+<body>
+
+<div class="header">
+    <div class="contenuto_header">
+        <div class="logo">
+            <a href="index.php"><img src="logo.png" alt="200" height="44"/></a>
+        </div>
+
+        <div class="divisore"></div>
+
+        <ul class="menu">
+            <li><a href="index.php">Home</a></li>
+            <li><a href="lista.php">Lista</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contatti</a></li>
+        </ul>
+    </div>
+</div>

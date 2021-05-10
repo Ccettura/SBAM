@@ -1,18 +1,21 @@
 <?php
    include 'connessione.php';
+   include 'header.php';
 ?>
-<html>
-<head>
-</head>
-<body>
+
+
 <form action="lista.php" method="POST">
-    <input type="text" name="search" placeholder="Cerca">
-    <button type="submit" name="submit">Cerca</button>
+    <div class="barra_ricerca">
+        <div>
+            <input class="input_codice" atype="text" name="search">
+            <button class="button" type="submit" name="submit">Cerca</button>
+        </div>
+    </div>
 </form>
 
 <h1> Lista di Libri: </h1>
 
-<div class="libri-container">
+<div class="small-container">
     <?php
     $conn=OpenCon();
     if (isset($_POST['submit'])) {
@@ -23,17 +26,15 @@
 
         if($queryResult > 0){
             echo "Ci sono ".$queryResult." risultati";
-            while($row = mysqli_fetch_Assoc($result)){
-                echo "<div class='risultato'>
-                         <h3>".$row['titolo']."</h3>
-                         <h3>".$row['copertina']."</h3>
-                         <h3>".$row['autori']."</h3>
-                         <h3>".$row['descrizione']."</h3>
-                         <h3>".$row['dataPubblicazione']."</h3>
-                         <h3>".$row['editore']."</h3>
-                         <h3>".$row['doveAcquistare']."</h3>
-                       </div>";
+            echo "<div class='row'>";
+            while ($row = mysqli_fetch_assoc($result)){
+                echo "
+                    <div class='col-5'>
+                        <a href='libro.php?cod=".$row['codice']."'> <p class='sottotitoli'>".$row['titolo']."</p></a>
+                        <a href='libro.php?cod=".$row['codice']."'> <img src='copertine/".$row['copertina']."'/> </a>
+                    </div>";
             }
+            echo "</div>";
         }else{
             echo "Non ci sono risultati per la ricerca!";
         }
@@ -42,22 +43,18 @@
     else{
         $sql = "SELECT * FROM libro";
         $result = mysqli_query($conn,$sql);
-        while($row = mysqli_fetch_Assoc($result)){
-            echo "<div class='risultato'>
-                         <h3>".$row['titolo']."</h3>
-                         <h3>".$row['copertina']."</h3>
-                         <h3>".$row['autori']."</h3>
-                         <h3>".$row['descrizione']."</h3>
-                         <h3>".$row['dataPubblicazione']."</h3>
-                         <h3>".$row['editore']."</h3>
-                         <h3>".$row['doveAcquistare']."</h3>
-                       </div>";
+        echo "<div class='row'>";
+        while($row = mysqli_fetch_Assoc($result)) {
+            echo "
+                <div class='col-5'>
+                    <a href='libro.php?cod=" . $row['codice'] . "'> <p class='sottotitoli'>" . $row['titolo'] . "</p></a>
+                    <a href='libro.php?cod=" . $row['codice'] . "'> <img src='copertine/" . $row['copertina'] . "'/> </a>
+                </div>";
         }
+        echo "</div>";
     }
     ?>
 </div>
-<script src="click.js">
-</script>
 
 </body>
 </html>
