@@ -13,8 +13,8 @@
             <div class="divisore"></div>
 
             <ul class="menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">Lista</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="lista.php">Lista</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Contatti</a></li>
             </ul>
@@ -44,10 +44,12 @@
 
         <div class="instazione_bacheca">
             <h1 class="sottotitoli giallo">ULTIMI ARRIVI</h1>
-            <p class="paragrafi">Dai un'occhiata agli utlimi arrivi.</p>
+            <p class="paragrafi">Dai un'occhiata agli ultimi arrivi:</p>
         </div>
 
-        <div class=""
+        <div class="">
+            
+        </div>
 
     </div>
 

@@ -24,7 +24,7 @@
         if($queryResult > 0){
             echo "Ci sono ".$queryResult." risultati";
             while($row = mysqli_fetch_Assoc($result)){
-                echo "<div>
+                echo "<div class='risultato'>
                          <h3>".$row['titolo']."</h3>
                          <h3>".$row['copertina']."</h3>
                          <h3>".$row['autori']."</h3>
@@ -43,7 +43,7 @@
         $sql = "SELECT * FROM libro";
         $result = mysqli_query($conn,$sql);
         while($row = mysqli_fetch_Assoc($result)){
-            echo "<div>
+            echo "<div class='risultato'>
                          <h3>".$row['titolo']."</h3>
                          <h3>".$row['copertina']."</h3>
                          <h3>".$row['autori']."</h3>
@@ -56,5 +56,8 @@
     }
     ?>
 </div>
+<script src="click.js">
+</script>
+
 </body>
 </html>
