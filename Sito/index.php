@@ -30,7 +30,7 @@
 
         <p class="paragrafi">Inserisci il titolo o l'isbn di un libro o fumetto per effettuare la ricerca.</p>
 
-        <form action="search.php" method="POST">
+        <form action="lista.php" method="POST">
             <div class="barra_ricerca">
                 <div><input class="input_codice" type="text" name="ricerca" placeholder=""></div>
                 <div class="mt"></div>

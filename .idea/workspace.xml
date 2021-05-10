@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02a3c75b-0cd7-4817-99cd-8e4d854b5898" name="Default Changelist" comment="Versione 0">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_05_2021_16_14__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_05_2021_16_14__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/libro.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/libro.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito/lista.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/lista.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/search.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,18 +28,22 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1riLLFpoWDNBeXhiJzlTc2huvey" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../xampp/php/php.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../XAMPP/php/php.exe" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -45,11 +52,6 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\scorc\IdeaProjects\SBAM\Sito" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -62,7 +64,12 @@
       <workItem from="1619453911075" duration="979000" />
       <workItem from="1620487176843" duration="270000" />
       <workItem from="1620487459845" duration="1508000" />
-      <workItem from="1620489086502" duration="1231000" />
+      <workItem from="1620489086502" duration="1759000" />
+      <workItem from="1620549764519" duration="9507000" />
+      <workItem from="1620549764519" duration="2118000" />
+      <workItem from="1620552168246" duration="510000" />
+      <workItem from="1620552937643" duration="8261000" />
+      <workItem from="1620568311156" duration="1299000" />
     </task>
     <task id="LOCAL-00001" summary="Versione 0">
       <created>1619454482720</created>
@@ -85,7 +92,42 @@
       <option name="project" value="LOCAL" />
       <updated>1619454861582</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Versione 0">
+      <created>1620490659282</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1620490659282</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Versione 0">
+      <created>1620560973179</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1620560973179</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Versione 0">
+      <created>1620557490331</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1620557490331</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Versione 0">
+      <created>1620558877403</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1620558877403</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Versione 0">
+      <created>1620561139865</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1620561139865</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +146,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Versione 0" />
     <option name="LAST_COMMIT_MESSAGE" value="Versione 0" />
   </component>
