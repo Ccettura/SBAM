@@ -97,11 +97,43 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
     font-size: 13px;
 }
 
+
+.linea_orizzontale{
+    height: 3px;
+    width: 90%;
+    background-color: gray;
+    transform: translateY(-7000%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .bacheca{
     width: 100%;
     text-align: center;
-    transform: translateY(-125%);
+    transform: translateY(-20%);
 }
+
+.main-carousel{
+    padding: 40px 0;
+}
+
+.carousel-cell{
+    height: 400px;
+    width: 600px;
+    background: url("sfondo.png")  center center;
+    background-size: cover;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 40px;
+}
+
+
+
+
+
+
+
+
 
 .container{
     max-width: 1300px;

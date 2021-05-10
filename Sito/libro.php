@@ -48,7 +48,7 @@ include 'header.php';
             <p class="paragrafi">Pagine: <?php echo $row['numeroPagine']; ?></p>
             <p class="paragrafi"><?php echo $row['descrizione']; ?></p>
             <p class="paragrafi">
-                <a href="<?php echo $row['doveAcquistare']; ?>">Acquista</a>
+                <a class="button" href="<?php echo $row['doveAcquistare']; ?>">ACQUISTA</a>
             </p>
         </div>
     </div>

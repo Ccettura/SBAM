@@ -40,16 +40,57 @@
 
     </div>
 
+
+    <div class="linea_orizzontale"></div>
+
+
     <div class="bacheca">
 
         <div class="instazione_bacheca">
-            <h1 class="sottotitoli giallo">ULTIMI ARRIVI</h1>
-            <p class="paragrafi">Dai un'occhiata agli utlimi arrivi.</p>
+            <h1 class="sottotitoli giallo">ULTIME USCITE</h1>
+            <p class="paragrafi">Dai un'occhiata alle ultime uscite.</p>
         </div>
 
-        <div class=""
 
+        <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+            <div class="carousel-cell">
+                <div class="sottotitoli">TITOLO LIBRO</div>
+            </div>
+            <div class="carousel-cell">
+                <div class="sottotitoli">TITOLO LIBRO</div>
+            </div>
+            <div class="carousel-cell">
+                <div class="sottotitoli">TITOLO LIBRO</div>
+            </div>
+            <div class="carousel-cell">
+                <div class="sottotitoli">TITOLO LIBRO</div>
+            </div>
+            <div class="carousel-cell">
+                <div class="sottotitoli">TITOLO LIBRO</div> </div>
+            <div class="carousel-cell"> <div class="sottotitoli">TITOLO LIBRO</div>
+            </div>
+            <div class="carousel-cell">
+                <div class="sottotitoli">TITOLO LIBRO</div>
+            </div>
+            
     </div>
+
+
+
+
+
+
+
+
+<!-- Script -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js" integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA==" crossorigin="anonymous"></script>
+
+
+
+
+
+
 
 </body>
 </html>
