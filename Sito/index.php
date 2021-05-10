@@ -6,7 +6,7 @@
     <div class="background"></div>
     <div class="logoSfondo"></div>
 
-    <div class="cerca">
+    <div class="cerca headline">
 
         <h1 class="sottotitoli giallo">CERCA UN LIBRO O UN FUMETTO</h1>
 
@@ -28,7 +28,7 @@
 
     <!-- BACHECA -->
 
-    <div class="bacheca">
+    <div class="bacheca headline">
 
         <div class="instazione_bacheca">
             <h1 class="sottotitoli giallo">ULTIME USCITE</h1>
@@ -57,6 +57,14 @@
 
 <!-- SCRIPT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js" integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA==" crossorigin="anonymous"></script>
+
+
+
+
+
+<script>
+    ScrollReveal().reveal('.headline',  { distance: '50px', duration: 1500 });
+</script>
 
 </body>
 </html>
