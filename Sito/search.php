@@ -1,6 +1,7 @@
 <?php
    include 'connessione.php';
 ?>
+...
 <html>
 <head></head>
 <body>
