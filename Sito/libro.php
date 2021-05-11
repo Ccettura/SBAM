@@ -1,13 +1,16 @@
 <?php
 include 'connessione.php';
 $conn = OpenCon();
-$query = "select * from libro where codice=".$_GET['cod'];
+$query = "select * from Libri JOIN scrive ON Libri.codiceLibro=scrive.codiceLibro JOIN Autori ON scrive.codiceAutore=Autori.codiceAutore JOIN Editori ON Libri.codiceEditore=Editori.codiceEditore where Libri.codiceLibro=".$_GET['cod'];
 $result = mysqli_query($conn,$query);
 if (!$result) {
     echo 'Impossibile eseguire la query: '.mysqli_error();
     exit;
 }
 $row=mysqli_fetch_assoc($result);
+
+$query = "select nomecognome from Autori JOIN scrive ON Autori.codiceAutore=scrive.codiceAutore WHERE scrive.codiceLibro=".$_GET['cod'];
+$autori = mysqli_query($conn,$query);
 
 include 'header.php';
 ?>
@@ -21,8 +24,16 @@ include 'header.php';
         </div>
         <div class="col">
             <h1 class="titoli"><?php echo $row['titolo']; ?></h1>
-            <p class="sottotitoli">Editore: <?php echo $row['editore']; ?></p>
-            <p class="sottotitoli">Autori: <?php echo $row['autori']; ?></p>
+            <p class="sottotitoli">Editore: <?php echo $row['nomeEditore']; ?></p>
+            <p class="sottotitoli">Autori:
+                <?php
+                $stringa="";
+                while ($nomecognome = mysqli_fetch_assoc($autori)){
+                    $stringa.=$nomecognome['nomecognome'].", ";
+                }
+                echo rtrim($stringa,", ");
+                ?>
+            </p>
             <p class="paragrafi">Data di pubblicazione: <?php echo $row['dataPubblicazione']; ?></p>
             <p class="paragrafi">Pagine: <?php echo $row['numeroPagine']; ?></p>
             <p class="paragrafi"><?php echo $row['descrizione']; ?></p>

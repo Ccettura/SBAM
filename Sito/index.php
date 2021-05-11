@@ -39,13 +39,13 @@
             <div class="row">
                 <?php
                 $conn=OpenCon();
-                $sql = "SELECT codice,titolo,copertina FROM (SELECT * FROM libro ORDER BY codice DESC LIMIT 5) sub ORDER BY codice ASC";
+                $sql = "SELECT codiceLibro,titolo,copertina,dataPubblicazione FROM Libri ORDER BY dataPubblicazione DESC LIMIT 5";
                 $result = mysqli_query($conn,$sql);
                 while ($row = mysqli_fetch_assoc($result)){
                     echo "
                     <div class='col-5'>
-                        <a href='libro.php?cod=".$row['codice']."'> <p class='sottotitoli'>".$row['titolo']."</p></a>
-                        <a href='libro.php?cod=".$row['codice']."'> <img src='copertine/".$row['copertina']."'/> </a>
+                        <a href='libro.php?cod=".$row['codiceLibro']."'> <p class='sottotitoli'>".$row['titolo']."</p></a>
+                        <a href='libro.php?cod=".$row['codiceLibro']."'> <img src='copertine/".$row['copertina']."'/> </a>
                     </div>";
                 }
                 ?>

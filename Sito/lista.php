@@ -20,14 +20,30 @@
     </form>
 </div>
 
+<div class="bacheca">
+    <select name="Categorie">
+        <?php
+        $conn=OpenCon();
+        $search = mysqli_real_escape_string($conn, $_POST['search']);
+        $sql = "SELECT nomeCategoria from Categorie";
+        $result = mysqli_query($conn,$sql);
+        echo "<option>Tutte le categorie</option>";
+        while ($row = mysqli_fetch_assoc($result)){
+            $categorie = $row['nomeCategoria'];
+            echo "<option value='$categorie'>$categorie</option>";
+        }
+        ?>
+    </select>
+
+</div>
+
 <h1 class="sottotitoli giallo centroTesto mt2 headline">LISTA DI LIBRI</h1>
 
 <div class="small-container headline">
     <?php
-    $conn=OpenCon();
     if (isset($_POST['submit'])) {
         $search = mysqli_real_escape_string($conn, $_POST['search']);
-        $sql = "SELECT * FROM libro WHERE titolo LIKE '%$search%' OR autori LIKE '%$search%'";
+        $sql = "SELECT * FROM Libri JOIN scrive on Libri.codiceLibro=scrive.codiceLibro JOIN Autori ON Autori.codiceAutore=scrive.codiceAutore WHERE titolo LIKE '%$search%' OR nome LIKE '%$search%' OR cognome LIKE '%$search%'";
         $result = mysqli_query($conn,$sql);
         $queryResult = mysqli_num_rows($result);
 
@@ -37,8 +53,8 @@
             while ($row = mysqli_fetch_assoc($result)){
                 echo "
                     <div class='col-5'>
-                        <a href='libro.php?cod=".$row['codice']."'> <p class='sottotitoli'>".$row['titolo']."</p></a>
-                        <a href='libro.php?cod=".$row['codice']."'> <img src='copertine/".$row['copertina']."'/> </a>
+                        <a href='libro.php?cod=".$row['codiceLibro']."'> <p class='sottotitoli'>".$row['titolo']."</p></a>
+                        <a href='libro.php?cod=".$row['codiceLibro']."'> <img src='copertine/".$row['copertina']."'/> </a>
                     </div>";
             }
             echo "</div>";
@@ -48,14 +64,14 @@
     }
 
     else{
-        $sql = "SELECT * FROM libro";
+        $sql = "SELECT * FROM Libri";
         $result = mysqli_query($conn,$sql);
         echo "<div class='row'>";
         while($row = mysqli_fetch_Assoc($result)) {
             echo "
                 <div class='col-5'>
-                    <a href='libro.php?cod=" . $row['codice'] . "'> <p class='sottotitoli'>" . $row['titolo'] . "</p></a>
-                    <a href='libro.php?cod=" . $row['codice'] . "'> <img src='copertine/" . $row['copertina'] . "'/> </a>
+                    <a href='libro.php?cod=" . $row['codiceLibro'] . "'> <p class='sottotitoli'>" . $row['titolo'] . "</p></a>
+                    <a href='libro.php?cod=" . $row['codiceLibro'] . "'> <img src='copertine/" . $row['copertina'] . "'/> </a>
                 </div>";
         }
         echo "</div>";
