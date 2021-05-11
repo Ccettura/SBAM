@@ -27,7 +27,7 @@
         <ul class="menu">
             <li><a href="index.php">Home</a></li>
             <li><a href="lista.php">Lista</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="about.php">About</a></li>
             <li><a href="">Contatti</a></li>
         </ul>
     </div>

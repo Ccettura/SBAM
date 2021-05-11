@@ -4,7 +4,10 @@ body{font-family: 'Cairo', sans-serif;}
 
 /*! Stili scritte */
 
-a{text-decoration: none} /*! Link senza sottolineatura */
+a{
+    text-decoration: none;
+
+}
 
 h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
 
@@ -102,10 +105,10 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
 
 
 .linea_orizzontale{
-    height: 3px;
+    height: 1px;
     width: 90%;
     background-color: gray;
-    transform: translateY(-7000%);
+    transform: translateY(-20000%);
     margin-left: auto;
     margin-right: auto;
 }
