@@ -4,7 +4,10 @@ body{font-family: 'Cairo', sans-serif;}
 
 /*! Stili scritte */
 
-a{text-decoration: none} /*! Link senza sottolineatura */
+a{
+    text-decoration: none;
+
+}
 
 h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
 
@@ -14,6 +17,7 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
 
 .giallo{color: #FDE601}
 .bianco{color: white}
+.grigio{color: gray}
 
 .mt{margin-top: 10px}
 .mt2{margin-top: 100px}
@@ -25,6 +29,7 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
 
 .header{
     background: #2a2a2e;
+    max-height: 65px;
 }
 
 .contenuto_header{
@@ -47,8 +52,32 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
     text-align: right;
 }
 
-.menu li{display: inline-block;}
-.menu li a{color: gray; padding: 15px; display: block;}
+.menu li{
+    display: inline-block;
+    color: gray;
+}
+
+.menu li a{padding: 15px; display: block;}
+
+.paginaAttiva{
+    color: #FDE601;
+}
+
+.cool::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #FDE601;
+    transition: width 0.3s;
+    transform: translateY(10px);
+}
+
+.cool:hover::after{
+    width: 100%;
+    transition: width 0.3s;
+}
+
 
 
 /*! Sfondo */
@@ -102,10 +131,10 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
 
 
 .linea_orizzontale{
-    height: 3px;
+    height: 1px;
     width: 90%;
     background-color: gray;
-    transform: translateY(-7000%);
+    transform: translateY(-20000%);
     margin-left: auto;
     margin-right: auto;
 }

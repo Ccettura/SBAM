@@ -25,10 +25,22 @@
         <div class="divisore"></div>
 
         <ul class="menu">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="lista.php">Lista</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contatti</a></li>
+            <li><a class="grigio cool" href="index.php">Home</a></li>
+            <li><a class="grigio cool" href="lista.php">Lista</a></li>
+            <li><a class="grigio cool" href="about.php">About</a></li>
+            <li><a class="grigio cool" href="contatti.php">Contatti</a></li>
         </ul>
     </div>
 </div>
+
+<script type="text/javascript">
+    const currentLocation = location.href;
+    const menuItem = document.querySelectorAll('a');
+    const menuLength = menuItem.length;
+
+    for (let i=0; i < menuLength; i++){
+        if (menuItem[i].href === currentLocation){
+            menuItem[i].className = "paginaAttiva"
+        }
+    }
+</script>
