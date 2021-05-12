@@ -1,9 +1,12 @@
 <?php
 
+
+include 'header.php';?>
+<div class="logoCentrato headline"></div>
+
+
+<?php
 // database connection code
-// $con = mysqli_connect('localhost', 'database_user', 'database_password','database');
-
-
 $con = new mysqli('localhost', 'root', '','tbl_feedbacks');
 
 //Check Connection
@@ -17,9 +20,11 @@ $txtEmail = $_POST['mail'];
 $txtType = $_POST['type'];
 $txtSubject = $_POST['subject'];
 
+// Test Echoes, cancellare poi
 echo "La tua mail è $txtEmail ";
 echo "<br> Il tipo di richiesta è $txtType ";
 echo "<br> Il testo è $txtSubject";
+
 // database insert SQL code
 $sql = "INSERT INTO `tbl_feedbacks` (`Id`, `fldEmail`, `fldType`, `fldMessage`) VALUES ('0', '$txtEmail', '$txtType', '$txtSubject')
 /*-- create table tbl_feedbacks
@@ -37,9 +42,13 @@ $rs = mysqli_query($con, $sql);
 
 if($rs)
 {
-    echo "Contact Records Inserted";
+    echo "<br> Informazioni trasmesse correttamente";
 }
 
 echo "<br> Complimenti, forse funziona";
 
+?>
+
+<?php
+include 'footer.php';
 ?>

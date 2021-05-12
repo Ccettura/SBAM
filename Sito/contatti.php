@@ -23,7 +23,7 @@ include 'header.php';
 
     <div class="container">
         <fieldset>
-            <form name="feedbackForm" method="POST" action='./Pagine/Feedbacks/feedbacks.php'>
+            <form name="feedbackForm" method="POST" action='feedbacks.php'>
 
                 <p> <label for="mail"><b>Indirizzo e-mail</b></label></p>
                 <p> <input type="text" id="mail" name="mail" placeholder="nome@provider.it"> </p>
@@ -40,7 +40,7 @@ include 'header.php';
                 <p><label for="subject"><b>Suggerimento</b></label>
                     <textarea id="subject" name="subject" placeholder="Scrivi qualcosa" style="height:200px" required></textarea></p>
 
-                <input type="submit" formmethod="post" formaction='./Pagine/Feedbacks/feedbacks.php' name="Submit" id="Submit" value="Submit"/>
+                <input type="submit" formmethod="post" formaction='feedbacks.php' name="Submit" id="Submit" value="Submit"/>
 
             </form>
         </fieldset>
