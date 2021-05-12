@@ -7,12 +7,16 @@ include 'header.php';?>
 
 <?php
 // database connection code
+mysqli_report(MYSQLI_REPORT_STRICT | MYSQLI_REPORT_ALL);
+try{
 $con = new mysqli('localhost', 'root', '','tbl_feedbacks');
+}catch(mysqli_sql_exception $e){
 
+}
 //Check Connection
 if(mysqli_connect_errno()){
-    echo "Failed to connect: " . mysqli_connect_error();
-    exit();
+    echo "Connessione al database fallita: " . mysqli_connect_error();
+
 }
 
 // get the post records
@@ -21,7 +25,7 @@ $txtType = $_POST['type'];
 $txtSubject = $_POST['subject'];
 
 // Test Echoes, cancellare poi
-echo "La tua mail è $txtEmail ";
+echo "<br> La tua mail è $txtEmail ";
 echo "<br> Il tipo di richiesta è $txtType ";
 echo "<br> Il testo è $txtSubject";
 
@@ -38,8 +42,12 @@ $sql = "INSERT INTO `tbl_feedbacks` (`Id`, `fldEmail`, `fldType`, `fldMessage`) 
 ";
 
 // insert in database
-$rs = mysqli_query($con, $sql);
 
+try {
+    $rs = mysqli_query($con, $sql);
+}catch(mysqli_sql_exception $e){
+    echo "<br> Inserimento fallito";
+}
 if($rs)
 {
     echo "<br> Informazioni trasmesse correttamente";

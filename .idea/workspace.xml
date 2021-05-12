@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02a3c75b-0cd7-4817-99cd-8e4d854b5898" name="Default Changelist" comment="" />
+    <list default="true" id="02a3c75b-0cd7-4817-99cd-8e4d854b5898" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/feedbacks.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/feedbacks.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,6 +71,10 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\franc\IdeaProjects\SBAM\Sito\copertine" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Progetti\ASBAM\Sito" />
+      <recent name="F:\Progetti\ASBAM\Sito\Pagine" />
+    </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.contatti.php">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -132,7 +139,7 @@
       <workItem from="1620827066694" duration="1419000" />
       <workItem from="1620829049146" duration="3679000" />
       <workItem from="1620832795080" duration="613000" />
-      <workItem from="1620835020582" duration="657000" />
+      <workItem from="1620835020582" duration="1745000" />
     </task>
     <task id="LOCAL-00001" summary="Versione 0">
       <created>1619454482720</created>
@@ -239,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620835666374</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Aggiunta grafica base e refactorato un paio di file">
+      <created>1620835697696</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1620835697696</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +276,7 @@
     <MESSAGE value="Versione 0" />
     <MESSAGE value="Forse funziona" />
     <MESSAGE value="Aggiunta grafica base" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta grafica base" />
+    <MESSAGE value="Aggiunta grafica base e refactorato un paio di file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta grafica base e refactorato un paio di file" />
   </component>
 </project>
