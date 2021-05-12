@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02a3c75b-0cd7-4817-99cd-8e4d854b5898" name="Default Changelist" comment="Ho bisogno di cianuro">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="02a3c75b-0cd7-4817-99cd-8e4d854b5898" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito/Pagine/Feedbacks/FeedbackPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/Pagine/Feedbacks/FeedbackPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito/Pagine/Feedbacks/feedbacks.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/Pagine/Feedbacks/feedbacks.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito/Pagine/Feedbacks/feedbacksDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/Pagine/Feedbacks/feedbacksDB.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/contatti.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/contatti.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/stile.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/stile.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +74,7 @@
       <recent name="C:\Users\franc\IdeaProjects\SBAM\Sito\copertine" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.FeedbackPage.html">
+  <component name="RunManager" selected="JavaScript Debug.contatti.php">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -112,10 +110,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.contatti.php" />
         <item itemvalue="JavaScript Debug.FeedbackPage.html" />
         <item itemvalue="PHP Script.feedbacks.php" />
         <item itemvalue="JavaScript Debug.index.php" />
-        <item itemvalue="JavaScript Debug.contatti.php" />
         <item itemvalue="PHP Script.connessione.php" />
       </list>
     </recent_temporary>
@@ -139,7 +137,7 @@
       <workItem from="1620568311156" duration="1299000" />
       <workItem from="1620731363842" duration="6312000" />
       <workItem from="1620827066694" duration="1419000" />
-      <workItem from="1620829049146" duration="2486000" />
+      <workItem from="1620829049146" duration="3429000" />
     </task>
     <task id="LOCAL-00001" summary="Versione 0">
       <created>1619454482720</created>
@@ -218,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620675873013</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Forse funziona">
+      <created>1620831580977</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1620831580977</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +244,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Versione 0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Versione 0" />
+    <MESSAGE value="Forse funziona" />
+    <option name="LAST_COMMIT_MESSAGE" value="Forse funziona" />
   </component>
 </project>

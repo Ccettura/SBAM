@@ -17,7 +17,9 @@ $txtEmail = $_POST['mail'];
 $txtType = $_POST['type'];
 $txtSubject = $_POST['subject'];
 
-echo "$txtEmail";
+echo "La tua mail è $txtEmail ";
+echo "<br> Il tipo di richiesta è $txtType ";
+echo "<br> Il testo è $txtSubject";
 // database insert SQL code
 $sql = "INSERT INTO `tbl_feedbacks` (`Id`, `fldEmail`, `fldType`, `fldMessage`) VALUES ('0', '$txtEmail', '$txtType', '$txtSubject')
 create table tbl_feedbacks
@@ -38,6 +40,6 @@ if($rs)
     echo "Contact Records Inserted";
 }
 
-echo "Complimenti, funziona";
+echo "<br> Complimenti, forse funziona";
 
 ?>
