@@ -9,7 +9,7 @@ a{
 
 }
 
-h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
+h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
 
 .titoli{font-size: 60px; color: white; font-weight: bold;}
 .sottotitoli{font-size: 30px; color: white; font-weight: lighter;}
@@ -45,6 +45,17 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
 .logo{
     align-items: center;
     display: block;
+}
+
+.logoCentrato{
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    background: url("LogoSfondo.png") center center no-repeat;
+    background-size: 70%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu{
@@ -219,6 +230,9 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
     text-align: center;
 }
 
+
+/* Sezione finale */
+
 .sezioneFinale{
     width: 100%;
     height: 150px;
@@ -259,6 +273,7 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
     align-items: center;
     margin: auto;
 }
+
 .privacy{
     width: 100%;
     max-height: 30px;
@@ -267,6 +282,8 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
     align-items: center;
     margin: auto;
 }
+
+/* Barra */
 
 .barra{
     width: 1%;
@@ -278,7 +295,47 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 30px;}
 }
 
 
+/* Pagina contatti */
 
+.contatti{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 70px;
+    display: flex;
+}
+
+.contatti_content{
+    width: 60%;
+    margin: auto;
+}
+
+.freccie{
+    width: 50%;
+    height: 151.5px;
+    text-align: center;
+    background: url("freccie.png") center center no-repeat;
+    background-size: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titolo_contatti{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.descrizione_contatti{
+    font-size: 20px;
+}
+
+
+.sezione_feedback{
+    border: 1px solid red;
+    width: 90%;
+    height: 500px;
+    margin: auto auto 100px;
+}
 
 
 

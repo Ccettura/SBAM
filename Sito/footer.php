@@ -24,11 +24,8 @@
 
 
 <!-- SCRIPT -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js" integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA==" crossorigin="anonymous"></script>
-
-
-
-
 
 <script>
     ScrollReveal().reveal('.headline',  { distance: '50px', duration: 1500 });
