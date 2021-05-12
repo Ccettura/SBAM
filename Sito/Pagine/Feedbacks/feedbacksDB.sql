@@ -1,6 +1,6 @@
 
-CREATE DATABASE IF NOT EXISTS `db_contact` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `db_contact`;
+CREATE DATABASE IF NOT EXISTS `tbl_feedbacks` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `tbl_feedbacks`;
 
 -- --------------------------------------------------------
 

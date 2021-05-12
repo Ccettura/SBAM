@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02a3c75b-0cd7-4817-99cd-8e4d854b5898" name="Default Changelist" comment="Versione 0">
-      <change afterPath="$PROJECT_DIR$/Sito/freccie.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_05_2021_16_14__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_05_2021_16_14__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_05_2021_20_01__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_05_2021_20_01__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="02a3c75b-0cd7-4817-99cd-8e4d854b5898" name="Default Changelist" comment="Ho bisogno di cianuro">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito/contatti.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/contatti.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito/stile.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/stile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/Pagine/Feedbacks/FeedbackPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/Pagine/Feedbacks/FeedbackPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/Pagine/Feedbacks/feedbacks.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/Pagine/Feedbacks/feedbacks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/Pagine/Feedbacks/feedbacksDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/Pagine/Feedbacks/feedbacksDB.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +28,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="C:/php" />
+      <path value="C:/php/pear" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="1riLLFpoWDNBeXhiJzlTc2huvey" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -39,21 +52,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunConfigurationTargetLRU" value="043ebe7f-ac4c-4a15-b6b4-e29f1c9313c2" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Sito/copertine" />
+    <property name="last_opened_file_path" value="C:/php/php-win.exe" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -61,18 +76,49 @@
       <recent name="C:\Users\franc\IdeaProjects\SBAM\Sito\copertine" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JavaScript Debug.FeedbackPage.html">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FeedbackPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ASBAM/SBAM/Sito/Pagine/Feedbacks/FeedbackPage.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="contatti.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ASBAM/SBAM/Sito/contatti.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ASBAM/SBAM/Sito/index.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="connessione.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Sito/connessione.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="feedbacks.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Sito/Pagine/Feedbacks/feedbacks.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.FeedbackPage.html" />
+        <item itemvalue="PHP Script.feedbacks.php" />
+        <item itemvalue="JavaScript Debug.index.php" />
+        <item itemvalue="JavaScript Debug.contatti.php" />
+        <item itemvalue="PHP Script.connessione.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -91,8 +137,9 @@
       <workItem from="1620552168246" duration="510000" />
       <workItem from="1620552937643" duration="8261000" />
       <workItem from="1620568311156" duration="1299000" />
-      <workItem from="1620731363842" duration="3004000" />
-      <workItem from="1620813743714" duration="3650000" />
+      <workItem from="1620731363842" duration="6312000" />
+      <workItem from="1620827066694" duration="1419000" />
+      <workItem from="1620829049146" duration="2486000" />
     </task>
     <task id="LOCAL-00001" summary="Versione 0">
       <created>1619454482720</created>
@@ -192,7 +239,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Versione 0" />
-    <MESSAGE value="Versione 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Versione 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Versione 0" />
   </component>
 </project>
