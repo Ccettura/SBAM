@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02a3c75b-0cd7-4817-99cd-8e4d854b5898" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito/Pagine/Feedbacks/feedbacks.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/Pagine/Feedbacks/feedbacks.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito/contatti.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/contatti.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito/stile.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/stile.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,19 +73,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.contatti.php">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FeedbackPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ASBAM/SBAM/Sito/Pagine/Feedbacks/FeedbackPage.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -137,7 +122,8 @@
       <workItem from="1620568311156" duration="1299000" />
       <workItem from="1620731363842" duration="6312000" />
       <workItem from="1620827066694" duration="1419000" />
-      <workItem from="1620829049146" duration="3429000" />
+      <workItem from="1620829049146" duration="3679000" />
+      <workItem from="1620832795080" duration="250000" />
     </task>
     <task id="LOCAL-00001" summary="Versione 0">
       <created>1619454482720</created>
@@ -223,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620831580977</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Forse funziona">
+      <created>1620832610764</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1620832610764</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

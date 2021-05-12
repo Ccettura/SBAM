@@ -22,13 +22,13 @@ echo "<br> Il tipo di richiesta è $txtType ";
 echo "<br> Il testo è $txtSubject";
 // database insert SQL code
 $sql = "INSERT INTO `tbl_feedbacks` (`Id`, `fldEmail`, `fldType`, `fldMessage`) VALUES ('0', '$txtEmail', '$txtType', '$txtSubject')
-create table tbl_feedbacks
+/*-- create table tbl_feedbacks
 (
 	Id int null,
 	fldEmail int null,
 	fldType int null,
 	fldMessage int null
-);
+); */
 
 ";
 

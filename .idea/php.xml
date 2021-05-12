@@ -84,7 +84,6 @@
       <extension name="mssql" enabled="false" />
       <extension name="mysql" enabled="false" />
       <extension name="mysql_xdevapi" enabled="false" />
-      <extension name="mysqli" enabled="false" />
       <extension name="ncurses" enabled="false" />
       <extension name="newrelic" enabled="false" />
       <extension name="oauth" enabled="false" />
