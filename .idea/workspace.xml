@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02a3c75b-0cd7-4817-99cd-8e4d854b5898" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito/Pagine/Feedbacks/FeedbackPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito/Pagine/Feedbacks/feedbacks.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/Pagine/Feedbacks/feedbacks.php" afterDir="false" />
-    </list>
+    <list default="true" id="02a3c75b-0cd7-4817-99cd-8e4d854b5898" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,7 +132,7 @@
       <workItem from="1620827066694" duration="1419000" />
       <workItem from="1620829049146" duration="3679000" />
       <workItem from="1620832795080" duration="613000" />
-      <workItem from="1620835020582" duration="343000" />
+      <workItem from="1620835020582" duration="657000" />
     </task>
     <task id="LOCAL-00001" summary="Versione 0">
       <created>1619454482720</created>
@@ -236,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620833278892</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Aggiunta grafica base">
+      <created>1620835666374</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1620835666374</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +261,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Versione 0" />
     <MESSAGE value="Forse funziona" />
-    <option name="LAST_COMMIT_MESSAGE" value="Forse funziona" />
+    <MESSAGE value="Aggiunta grafica base" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta grafica base" />
   </component>
 </project>
