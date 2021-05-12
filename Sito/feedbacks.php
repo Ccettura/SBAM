@@ -30,27 +30,20 @@ echo "<br> Il tipo di richiesta è $txtType ";
 echo "<br> Il testo è $txtSubject";
 
 // database insert SQL code
-$sql = "INSERT INTO `tbl_feedbacks` (`Id`, `fldEmail`, `fldType`, `fldMessage`) VALUES ('0', '$txtEmail', '$txtType', '$txtSubject')
-/*-- create table tbl_feedbacks
-(
-	Id int null,
-	fldEmail int null,
-	fldType int null,
-	fldMessage int null
-); */
-
-";
+$sql = "INSERT INTO `tbl_feedbacks` (`Id`, `fldEmail`, `fldType`, `fldMessage`) VALUES ('0', '$txtEmail', '$txtType', '$txtSubject')";
 
 // insert in database
 
-try {
-    $rs = mysqli_query($con, $sql);
-}catch(mysqli_sql_exception $e){
-    echo "<br> Inserimento fallito";
-}
-if($rs)
-{
-    echo "<br> Informazioni trasmesse correttamente";
+    if (!empty($con)) {
+        $rs = mysqli_query($con, $sql);
+    }
+
+
+if (!empty($rs)) {
+    if($rs)
+    {
+        echo "<br> Informazioni trasmesse correttamente";
+    }
 }
 
 echo "<br> Complimenti, forse funziona";

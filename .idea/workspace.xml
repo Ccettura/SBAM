@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02a3c75b-0cd7-4817-99cd-8e4d854b5898" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito/feedbacks.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/feedbacks.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +138,7 @@
       <workItem from="1620827066694" duration="1419000" />
       <workItem from="1620829049146" duration="3679000" />
       <workItem from="1620832795080" duration="613000" />
-      <workItem from="1620835020582" duration="1745000" />
+      <workItem from="1620835020582" duration="2091000" />
     </task>
     <task id="LOCAL-00001" summary="Versione 0">
       <created>1619454482720</created>
@@ -253,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620835697696</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Try catch">
+      <created>1620836974114</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1620836974114</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +283,7 @@
     <MESSAGE value="Forse funziona" />
     <MESSAGE value="Aggiunta grafica base" />
     <MESSAGE value="Aggiunta grafica base e refactorato un paio di file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta grafica base e refactorato un paio di file" />
+    <MESSAGE value="Try catch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Try catch" />
   </component>
 </project>
