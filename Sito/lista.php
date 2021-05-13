@@ -22,19 +22,22 @@
 </div>
 
 <div class="bacheca">
-    <select name="Categorie">
-        <?php
-        $conn=OpenCon();
-        $search = mysqli_real_escape_string($conn, $_POST['search']);
-        $sql = "SELECT nomeCategoria from Categorie";
-        $result = mysqli_query($conn,$sql);
-        echo "<option>Tutte le categorie</option>";
-        while ($row = mysqli_fetch_assoc($result)){
-            $categorie = $row['nomeCategoria'];
-            echo "<option value='$categorie'>$categorie</option>";
-        }
-        ?>
-    </select>
+
+    <form method="post" action="lista.php">
+        <select name="Categorie">
+            <?php
+            $conn=OpenCon();
+            $search = mysqli_real_escape_string($conn, $_POST['search']);
+            $sql = "SELECT nomeCategoria from Categorie";
+            $result = mysqli_query($conn,$sql);
+            echo "<option>Tutte le categorie</option>";
+            while ($row = mysqli_fetch_assoc($result)){
+                $categorie = $row['nomeCategoria'];
+                echo "<option value='$categorie'>$categorie</option>";
+            }
+            ?>
+        </select>
+    </form>
 
 </div>
 
@@ -42,7 +45,7 @@
 
 <div class="small-container headline">
     <?php
-    $limite=5;
+    $limite=15;
     if (isset($_POST['submit'])) {
         $search = mysqli_real_escape_string($conn, $_POST['search']);
         $sql = "SELECT * FROM Libri JOIN scrive on Libri.codiceLibro=scrive.codiceLibro JOIN Autori ON Autori.codiceAutore=scrive.codiceAutore WHERE titolo LIKE '%$search%' OR nome LIKE '%$search%' OR cognome LIKE '%$search%'";
