@@ -19,28 +19,30 @@ include 'header.php';
 
 </div>
 
-<div class="sezione_feedback">
+<div class="sezione_feedback headline">
 
     <div class="container">
         <fieldset>
             <form name="feedbackForm" method="POST" action='feedbacks.php'>
 
-                <p> <label for="mail"><b>Indirizzo e-mail</b></label></p>
-                <p> <input type="text" id="mail" name="mail" placeholder="nome@provider.it"> </p>
+                <p class="bianco"> <label for="mail"><b>Indirizzo e-mail</b></label></p>
+                <p> <input type="text" id="mail" name="mail" placeholder=""> </p>
 
 
 
-                <p><label for="type"><b>Tipo di richiesta</b></label>
-                    <select id="type" name="type" >
+                <p class="bianco"><label for="type"><b>Tipo di richiesta</b></label>
+                    <select class="bianco" id="type" name="type" >
                         <option value="addBook">Aggiunta Libro</option>
                         <option value="addFunction">Aggiunta Funzioni</option>
                         <option value="other">Altro</option>
                     </select></p>
 
-                <p><label for="subject"><b>Suggerimento</b></label>
-                    <textarea id="subject" name="subject" placeholder="Scrivi qualcosa" style="height:200px" required></textarea></p>
+                <p class="bianco"><label for="subject"><b>Suggerimento</b></label>
+                    <textarea id="subject" name="subject" placeholder="" style="height:200px" required></textarea></p>
 
-                <input type="submit" formmethod="post" formaction='feedbacks.php' name="Submit" id="Submit" value="Submit"/>
+                <div class="tasto_submit">
+                    <input class="button" type="submit" formmethod="post" formaction='feedbacks.php' name="Submit" id="Submit" value="Submit"/>
+                </div>
 
             </form>
         </fieldset>
@@ -48,12 +50,6 @@ include 'header.php';
     <br>
 
 </div>
-
-
-
-
-
-
 
 <?php
 include 'footer.php';
