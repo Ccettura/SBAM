@@ -1,5 +1,6 @@
 <?php
    include 'connessione.php';
+   include 'paginazione.php';
    include 'header.php';
 ?>
 
@@ -41,24 +42,17 @@
 
 <div class="small-container headline">
     <?php
+    $limite=5;
     if (isset($_POST['submit'])) {
         $search = mysqli_real_escape_string($conn, $_POST['search']);
         $sql = "SELECT * FROM Libri JOIN scrive on Libri.codiceLibro=scrive.codiceLibro JOIN Autori ON Autori.codiceAutore=scrive.codiceAutore WHERE titolo LIKE '%$search%' OR nome LIKE '%$search%' OR cognome LIKE '%$search%'";
         $result = mysqli_query($conn,$sql);
-        $queryResult = mysqli_num_rows($result);
-
-        if($queryResult > 0){
-            echo "Ci sono ".$queryResult." risultati";
-            echo "<div class='row'>";
-            while ($row = mysqli_fetch_assoc($result)){
-                echo "
-                    <div class='col-5'>
-                        <a href='libro.php?cod=".$row['codiceLibro']."'> <p class='sottotitoli'>".$row['titolo']."</p></a>
-                        <a href='libro.php?cod=".$row['codiceLibro']."'> <img src='copertine/".$row['copertina']."'/> </a>
-                    </div>";
-            }
-            echo "</div>";
-        }else{
+        $numrighe=mysqli_num_rows($result);
+        if($numrighe > 0){
+            echo "Ci sono ".$numrighe." risultati";
+            $currentPage=creaLista($result,$numrighe, $limite);
+        }
+        else{
             echo "Non ci sono risultati per la ricerca!";
         }
     }
@@ -66,20 +60,27 @@
     else{
         $sql = "SELECT * FROM Libri";
         $result = mysqli_query($conn,$sql);
-        echo "<div class='row'>";
-        while($row = mysqli_fetch_Assoc($result)) {
-            echo "
-                <div class='col-5'>
-                    <a href='libro.php?cod=" . $row['codiceLibro'] . "'> <p class='sottotitoli'>" . $row['titolo'] . "</p></a>
-                    <a href='libro.php?cod=" . $row['codiceLibro'] . "'> <img src='copertine/" . $row['copertina'] . "'/> </a>
-                </div>";
-        }
-        echo "</div>";
+        $numrighe=mysqli_num_rows($result);
+        $currentPage=creaLista($result,$numrighe, $limite);
     }
     ?>
+
+    <div class="pagination">
+        <?php
+        $pagine=$numrighe/$limite;
+        $pagine=ceil($pagine);
+        for($i=1; $i<=$pagine; $i++){
+            echo "<a href='lista.php?page=$i'>$i</a>";
+        }
+        ?>
+    </div>
+
 </div>
 
-
+<script>
+    var div = document.getElementsByClassName("pagination")[0];
+    div.children[<?php echo $currentPage-1 ?>].classList.add("active");
+</script>
 
 <?php
 include 'footer.php';
