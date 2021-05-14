@@ -20,29 +20,26 @@
 </div>
 
 <div class="bacheca">
-
-    <form method="post" action="lista.php">
-        <select name="Categorie">
-            <?php
-            $conn=OpenCon();
-            $search = mysqli_real_escape_string($conn, $_POST['search']);
-            $sql = "SELECT nomeCategoria from Categorie";
-            $result = mysqli_query($conn,$sql);
-            echo "<option>Tutte le categorie</option>";
-            while ($row = mysqli_fetch_assoc($result)){
-                $categorie = $row['nomeCategoria'];
-                echo "<option value='$categorie'>$categorie</option>";
-            }
-            ?>
-        </select>
-    </form>
-
+    <select name="categorie">
+        <?php
+        $conn=OpenCon();
+        $search = mysqli_real_escape_string($conn, $_POST['search']);
+        $sql = "SELECT nomeCategoria from Categorie";
+        $result = mysqli_query($conn,$sql);
+        echo "<option>Tutte le categorie</option>";
+        while ($row = mysqli_fetch_assoc($result)){
+            $categorie = $row['nomeCategoria'];
+            echo "<option value='$categorie'>$categorie</option>";
+        }
+        ?>
+    </select>
 </div>
 
 <h1 class="sottotitoli giallo centroTesto mt2 headline">LISTA DI LIBRI</h1>
 
 <div class="small-container headline">
     <?php
+    $conn=OpenCon();
     $limite=15;
     $libri = mysqli_query($conn,"SELECT titolo FROM Libri");
     $libri = mysqli_fetch_all($libri);
@@ -52,7 +49,7 @@
 
     if (isset($_POST['submit'])) {
         $search = mysqli_real_escape_string($conn, $_POST['search']);
-        $sql = "SELECT * FROM Libri JOIN scrive on Libri.codiceLibro=scrive.codiceLibro JOIN Autori ON Autori.codiceAutore=scrive.codiceAutore WHERE titolo LIKE '%$search%' OR nomecognome LIKE '%$search%'";
+        $sql = "SELECT distinct Libri.codiceLibro, titolo, copertina FROM Libri JOIN scrive on Libri.codiceLibro=scrive.codiceLibro JOIN Autori ON Autori.codiceAutore=scrive.codiceAutore WHERE titolo LIKE '%$search%' OR nomecognome LIKE '%$search%'";
         $result = mysqli_query($conn,$sql);
         $numrighe=mysqli_num_rows($result);
         if($numrighe > 0){
