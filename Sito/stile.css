@@ -240,6 +240,7 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
     text-align: center;
     padding: 10px;
     align-items: center;
+    margin-top: 50px;
 }
 
 .social{
@@ -448,8 +449,8 @@ input[type=text] {
     width: 100%;
 }
 input[type=submit] {
-    background-color: DodgerBlue;
-    color: #fff;
+    background-color: #ffff00;
+    color: black;
 }
 .autocomplete-items {
     position: absolute;
@@ -474,11 +475,27 @@ input[type=submit] {
 }
 .autocomplete-active {
     /*when navigating through the items using the arrow keys:*/
-    background-color: DodgerBlue !important;
-    color: #ffffff;
+    background-color: #ffff00 !important;
+    color: black;
 }
 
+/* Pagination links */
+.pagination a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
 
+/* Style the active/current link */
+.pagination a.active {
+    background-color: #ffff00;
+    color: black;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {background-color: #ddd;}
 
 
 *,
