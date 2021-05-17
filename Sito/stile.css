@@ -20,6 +20,7 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
 .grigio{color: gray}
 
 .mt{margin-top: 10px}
+.mt1{margin-top: 30px}
 .mt2{margin-top: 100px}
 
 .centroTesto{text-align: center;}
@@ -397,38 +398,24 @@ input[type=submit]:hover {
     font-size: 60px;
 }
 
-.riga1{
+.riga{
     display: flex;
     height: 400px;
     width: 100%;
 }
 
-.riga2{
-    display: flex;
-    height: 400px;
-    width: 100%;
+.elemento{
+    width: 50%;
+    padding: 30px;
+    text-align: center;
 }
 
-.elemento1{
+.immagine1{
     border: 1px solid red;
-    width: 50%;
-    padding: 30px;
-}
-
-.elemento2{
-    border: 1px solid red;
-    width: 50%;
-    padding: 30px;
-}
-.elemento3{
-    border: 1px solid red;
-    width: 50%;
-    padding: 30px;
-}
-.elemento4{
-    border: 1px solid red;
-    width: 50%;
-    padding: 30px;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    border-radius: 100%;
 }
 
 
