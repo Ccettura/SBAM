@@ -3,6 +3,8 @@
     include 'connessione.php';
 ?>
 
+    <script src="autocompilazione.js" type="text/javascript"></script>
+
     <div class="background"></div>
     <div class="logoSfondo"></div>
 
@@ -12,11 +14,12 @@
 
         <p class="paragrafi">Inserisci il titolo o l'isbn di un libro o fumetto per effettuare la ricerca.</p>
 
-        <form action="lista.php" method="POST">
-            <div class="barra_ricerca">
-                <div><input class="input_codice" atype="text" name="search"></div>
-                <div class="mt"></div>
-                <div><button class="button" type="submit" name="submit">Cerca</button></div>
+        <form autocomplete="off" action="lista.php" method="POST">
+            <div class="autocomplete">
+                <div>
+                    <input id="myInput" class="input_codice" atype="text" name="search">
+                    <button class="button" type="submit" name="submit">Cerca</button>
+                </div>
             </div>
         </form>
 
@@ -56,5 +59,19 @@
 
 
 <?php
+
+$libri = mysqli_query($conn,"SELECT titolo FROM Libri");
+$libri = mysqli_fetch_all($libri);
+for($i=0;$i<count($libri);$i++){
+    $libro[$i]=$libri[$i][0];
+}
+
+echo"
+<script type='text/javascript'>
+    var libro = ".json_encode($libro)."
+    autocomplete(document.getElementById('myInput'), libro);
+</script>
+";
+
 include 'footer.php';
 ?>
