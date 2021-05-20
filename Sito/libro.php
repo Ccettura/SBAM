@@ -34,6 +34,7 @@ include 'header.php';
                 echo rtrim($stringa,", ");
                 ?>
             </p>
+            <p class="paragrafi">Categoria: <?php echo $row['categoria']; ?></p>
             <p class="paragrafi">Data di pubblicazione: <?php echo $row['dataPubblicazione']; ?></p>
             <p class="paragrafi">Pagine: <?php echo $row['numeroPagine']; ?></p>
             <p class="paragrafi"><?php echo $row['descrizione']; ?></p>

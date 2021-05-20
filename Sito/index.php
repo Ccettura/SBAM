@@ -64,6 +64,7 @@
     </div>
 
 
+
 <?php
 
 $libri = mysqli_query($conn,"SELECT titolo FROM Libri");

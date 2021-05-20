@@ -11,7 +11,6 @@ function creaLista($result, $numrighe, $limite, $sezione){
         $result->data_seek(0);
         $start=0;
     }
-    //echo "sezione $sezione pagina $currentPage";
     echo "<div class='row'>";
     for($i=1; $i<=$limite and $i<=$numrighe-$start; $i++){
         $row = mysqli_fetch_assoc($result);
