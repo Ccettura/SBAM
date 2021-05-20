@@ -129,7 +129,7 @@
 
         if($sezione!=0){
             $sez=$sezione-1;
-            $page=$currentPage-1;
+            $page=10*$sezione-1;
             echo "<a href='lista.php?page=1&sez=0$search$categoria'>&laquo;</a>";
             echo "<a href='lista.php?page=$page&sez=$sez$search$categoria'>&lsaquo;</a>";
             $currentPage=$currentPage+2;
