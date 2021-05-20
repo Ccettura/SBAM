@@ -13,10 +13,10 @@
         <p class="paragrafi">Inserisci il titolo o l'isbn di un libro o fumetto per effettuare la ricerca.</p>
     </div>
 
-    <form autocomplete="off" action="lista.php" method="POST">
+    <form autocomplete="off" action="lista.php" method="GET">
             <div class="autocomplete">
                 <input id="myInput" class="input_codice" atype="text" name="search">
-                <button class="button" type="submit" name="submit">Cerca</button>
+                <button class="button" type="submit">Cerca</button>
             </div>
     </form>
 </div>
@@ -66,8 +66,8 @@
         $libro[$i]=$libri[$i][0];
     }
 
-    if (isset($_POST['submit'])) {
-        $search = mysqli_real_escape_string($conn, $_POST['search']);
+    if (isset($_GET['search'])) {
+        $search = mysqli_real_escape_string($conn, $_GET['search']);
         $sql = "SELECT distinct Libri.codiceLibro, titolo, copertina FROM Libri JOIN scrive on Libri.codiceLibro=scrive.codiceLibro JOIN Autori ON Autori.codiceAutore=scrive.codiceAutore WHERE titolo LIKE '%$search%' OR nomecognome LIKE '%$search%'";
         $result = mysqli_query($conn,$sql);
         $numrighe = mysqli_num_rows($result);
@@ -90,11 +90,17 @@
 
     <div class="pagination">
         <?php
+        if (isset($_GET['search'])){
+            $search="&search=".$_GET['search'];
+        }
+        else{
+            $search="";
+        }
         if($sezione!=0){
             $sez=$sezione-1;
             $page=$currentPage-1;
-            echo "<a href='lista.php?page=1&sez=0'>&laquo;</a>";
-            echo "<a href='lista.php?page=$page&sez=$sez'>&lsaquo;</a>";
+            echo "<a href='lista.php?page=1&sez=0$search'>&laquo;</a>";
+            echo "<a href='lista.php?page=$page&sez=$sez$search'>&lsaquo;</a>";
             $currentPage=$currentPage+2;
         }
         else{
@@ -108,10 +114,10 @@
                 $i=1;
             }
             $sez=floor($i/10);
-            echo "<a href='lista.php?page=$i&sez=$sez'>$i</a>";
+            echo "<a href='lista.php?page=$i&sez=$sez$search'>$i</a>";
         }
         if($sezione!=$sezioni){
-            echo "<a href='lista.php?page=$pagine&sez=$sezioni'>&raquo;</a>";
+            echo "<a href='lista.php?page=$pagine&sez=$sezioni$search'>&raquo;</a>";
         }
 
         //TODO fixare ricerca
