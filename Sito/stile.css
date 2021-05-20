@@ -22,6 +22,7 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
 .mt{margin-top: 10px}
 .mt1{margin-top: 30px}
 .mt2{margin-top: 100px}
+.mt3{margin-top: 250px}
 
 .centroTesto{text-align: center;}
 
@@ -31,6 +32,8 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
 .header{
     background: #2a2a2e;
     max-height: 65px;
+    position: relative;
+    z-index: 1;
 }
 
 .contenuto_header{
@@ -100,15 +103,23 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
     width: 100%;
     align-items: center;
     text-align: center;
-    background: url("sfondo.png")  center center;
+    background: black;
     background-size: cover;
 }
+
+
+#video-background{
+    min-height: 400px;
+    min-width: 1920px;
+
+}
+
 
 .logoSfondo{
     background: url("LogoSfondo.png")  center center;
     height: 500px;
     align-items: center;
-    transform: translateY(-50%) scale(0.5);
+    transform: translateY(-50%) scale(0.4);
 }
 
 
@@ -117,7 +128,8 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
 .cerca{
     width: 100%;
     text-align: center;
-    transform: translateY(-125%);
+    transform: translateY(-175%);
+    z-index: 99;
 }
 
 .barra_ricerca{
@@ -127,7 +139,12 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
 .input_codice{
     padding: 1em 15em;
     text-align: center;
+    transform: translateY(-1%);
+    border-radius: 5px;
+    font-size: 13px;
 }
+
+
 
 .button{
     text-align: center;
@@ -149,21 +166,49 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
     transform: translateY(-20000%);
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    z-index: -1;
+}
+
+.linea_orizzontale2{
+    height: 1px;
+    width: 90%;
+    background-color: gray;
+    transform: translateY(10500%);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: -1;
 }
 
 .bacheca{
     width: 100%;
     text-align: center;
     transform: translateY(-20%);
+    position: relative;
+    z-index: -1;
 }
 
+.categorie{
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ricerca_2{
+    transform: translateY(-50%);
+}
+
+.bottone_centrato{
+    margin-top: 20px;
+    margin-left: 45%;
+}
 
 /* Elementi per ricerca o per ultimi aggiunti */
 
 .container{
     max-width: 1300px;
-    margin: auto;
-    margin-top: 25px;
+    margin: 25px auto auto;
     padding-left: 25px;
     padding-right: 25px;
 }
@@ -380,7 +425,7 @@ input[type=submit]:hover {
 /* About */
 
 .copertina_about{
-    background: url("sfondo.png");
+    background: url("sfondoAbout.png");
     width: 100%;
     height: 300px;
     background-size: cover;
@@ -399,10 +444,28 @@ input[type=submit]:hover {
     font-size: 60px;
 }
 
-.riga{
+.aboutUs{
+    width: 40%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.riga1{
     display: flex;
     height: 400px;
     width: 100%;
+}
+.riga2{
+    display: flex;
+    height: 400px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.griglia{
+    width: 75%;
+    margin: 100px auto auto;
 }
 
 .elemento{
@@ -411,55 +474,49 @@ input[type=submit]:hover {
     text-align: center;
 }
 
-.immagine1{
-    border: 1px solid red;
-    height: 200px;
-    width: 200px;
-    margin: auto;
-    border-radius: 100%;
-}
-
 .autocomplete {
     /*the container must be positioned relative:*/
     position: relative;
     display: inline-block;
-    z-index: 1;
+    z-index: 2;
 }
 input {
-    border: 1px solid transparent;
-    background-color: #f1f1f1;
+    transform: translateY(-50%);
+    border: 1px solid gray;
     padding: 10px;
     font-size: 16px;
 }
 input[type=text] {
-    background-color: #f1f1f1;
     width: 100%;
+    border: 1px solid #404040;
 }
 input[type=submit] {
-    background-color: #ffff00;
     color: black;
+    border: 1px solid gray;
 }
+
 .autocomplete-items {
     position: absolute;
     border: 1px solid #d4d4d4;
     border-bottom: none;
     border-top: none;
-    z-index: 99;
-    /*position the autocomplete items to be the same width as the container:*/
     top: 100%;
     left: 0;
     right: 0;
 }
+
 .autocomplete-items div {
     padding: 10px;
     cursor: pointer;
     background-color: #fff;
     border-bottom: 1px solid #d4d4d4;
 }
+
 .autocomplete-items div:hover {
     /*when hovering an item:*/
     background-color: #e9e9e9;
 }
+
 .autocomplete-active {
     /*when navigating through the items using the arrow keys:*/
     background-color: #ffff00 !important;

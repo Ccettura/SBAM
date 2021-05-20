@@ -26,7 +26,7 @@ include 'header.php';
             <form name="feedbackForm" method="POST" action='feedbacks.php'>
 
                 <p class="bianco"> <label for="mail"><b>Indirizzo e-mail</b></label></p>
-                <p> <input type="text" id="mail" name="mail" placeholder=""> </p>
+                <p> <input class="bianco" type="text" id="mail" name="mail" placeholder=""> </p>
 
 
 
@@ -38,7 +38,7 @@ include 'header.php';
                     </select></p>
 
                 <p class="bianco"><label for="subject"><b>Suggerimento</b></label>
-                    <textarea id="subject" name="subject" placeholder="" style="height:200px" required></textarea></p>
+                    <textarea class="bianco" id="subject" name="subject" placeholder="" style="height:200px" required></textarea></p>
 
                 <div class="tasto_submit">
                     <input class="button" type="submit" formmethod="post" formaction='feedbacks.php' name="Submit" id="Submit" value="Submit"/>

@@ -1,5 +1,3 @@
-<!----- Sezione finale (da cambiare i link) ------>
-
 <div class="sezioneFinale">
 
     <div class="social">

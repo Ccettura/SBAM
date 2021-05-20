@@ -5,7 +5,13 @@
 
     <script src="autocompilazione.js" type="text/javascript"></script>
 
-    <div class="background"></div>
+    <div class="background">
+
+        <video autoplay muted loop id="video-background">
+            <source src="video-background2.mp4" type="video/mp4">
+        </video>
+
+    </div>
     <div class="logoSfondo"></div>
 
     <div class="cerca headline">
@@ -72,6 +78,9 @@ echo"
     autocomplete(document.getElementById('myInput'), libro);
 </script>
 ";
+?>
 
+
+<?php
 include 'footer.php';
 ?>

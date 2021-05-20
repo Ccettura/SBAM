@@ -21,24 +21,31 @@
     </form>
 </div>
 
-<form action="lista.php" method="POST">
-    <div>
-        <select name="categorie">
-            <?php
-            $conn=OpenCon();
-            $search = mysqli_real_escape_string($conn, $_POST['search']);
-            $sql = "SELECT nomeCategoria from Categorie";
-            $result = mysqli_query($conn,$sql);
-            echo "<option value='all'>Tutte le categorie</option>";
-            while ($row = mysqli_fetch_assoc($result)){
-                $categorie = $row['nomeCategoria'];
-                echo "<option value='$categorie'>$categorie</option>";
-            }
-            ?>
-        </select>
-        <input type="submit" name="filter" value="Find">
-    </div>
-</form>
+<div class="categorie mt2 headline">
+
+    <form action="lista.php" method="POST">
+        <div>
+            <div class="ricerca_2">
+                <select class="bianco" name="categorie">
+                    <?php
+                    $conn=OpenCon();
+                    $search = mysqli_real_escape_string($conn, $_POST['search']);
+                    $sql = "SELECT nomeCategoria from Categorie";
+                    $result = mysqli_query($conn,$sql);
+                    echo "<option value='all'>Tutte le categorie</option>";
+                    while ($row = mysqli_fetch_assoc($result)){
+                        $categorie = $row['nomeCategoria'];
+                        echo "<option value='$categorie'>$categorie</option>";
+                    }
+                    ?>
+                </select>
+            </div>
+            <div class="bottone_centrato">
+                <input class="button" type="submit" name="filter" value="Cerca">
+        </div>
+    </form>
+
+</div>
 
 <h1 class="sottotitoli giallo centroTesto mt2 headline">LISTA DI LIBRI</h1>
 
@@ -111,7 +118,6 @@
 
         ?>
     </div>
-
 </div>
 
 
@@ -122,13 +128,14 @@
 
 
 <?php
-
 echo"
 <script type='text/javascript'>
     var libro = ".json_encode($libro)."
     autocomplete(document.getElementById('myInput'), libro);
 </script>
 ";
+?>
 
+<?php
 include 'footer.php';
 ?>
