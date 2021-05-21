@@ -45,10 +45,10 @@ include 'header.php';
             <p class="bianco paragrafi">Social Media Manager</p>
         </div>
         <div class="elemento">
-            <h1 class="giallo sottotitoli">Nicolò Andrea Carissimo</h1>
+            <h1 class="giallo sottotitoli">Niccolò Andrea Carissimo</h1>
             <p class="bianco paragrafi">CEO & Founder</p>
             <p class="bianco paragrafi">Web Designer</p>
-            <p class="bianco paragrafi">HR Directorr</p>
+            <p class="bianco paragrafi">HR Director</p>
         </div>
     </div>
 

@@ -22,14 +22,13 @@
 </div>
 
 <div class="categorie mt2 headline">
-
-    <form action="lista.php" method="POST">
+    <form action="lista.php" method="GET">
         <div>
             <div class="ricerca_2">
-                <select class="bianco" name="categorie">
+                <select class="bianco" name="cat">
                     <?php
                     $conn=OpenCon();
-                    $search = mysqli_real_escape_string($conn, $_POST['search']);
+                    $search = mysqli_real_escape_string($conn, $_GET['search']);
                     $sql = "SELECT nomeCategoria from Categorie";
                     $result = mysqli_query($conn,$sql);
                     echo "<option value='all'>Tutte le categorie</option>";
@@ -41,10 +40,10 @@
                 </select>
             </div>
             <div class="bottone_centrato">
-                <input class="button" type="submit" name="filter" value="Cerca">
+                <input class="button" type="submit">
+            </div>
         </div>
     </form>
-
 </div>
 
 <h1 class="sottotitoli giallo centroTesto mt2 headline">LISTA DI LIBRI</h1>
@@ -63,17 +62,29 @@
     $libri = mysqli_query($conn,"SELECT titolo FROM Libri");
     $libri = mysqli_fetch_all($libri);
     for($i=0;$i<count($libri);$i++){
-        $libro[$i]=$libri[$i][0];
+        $libro[$i] = $libri[$i][0];
     }
 
     if (isset($_GET['search'])) {
         $search = mysqli_real_escape_string($conn, $_GET['search']);
-        $sql = "SELECT distinct Libri.codiceLibro, titolo, copertina FROM Libri JOIN scrive on Libri.codiceLibro=scrive.codiceLibro JOIN Autori ON Autori.codiceAutore=scrive.codiceAutore WHERE titolo LIKE '%$search%' OR nomecognome LIKE '%$search%'";
+        if(isset($_GET['cat'])){
+            $categoria = $_GET['cat'];
+            if($categoria=='all'){
+                $sql = "SELECT distinct Libri.codiceLibro, titolo, copertina FROM Libri JOIN scrive on Libri.codiceLibro=scrive.codiceLibro JOIN Autori ON Autori.codiceAutore=scrive.codiceAutore WHERE titolo LIKE '%$search%' OR nomecognome LIKE '%$search%'";
+            }
+            else{
+                $sql = "SELECT distinct Libri.codiceLibro, titolo, copertina FROM Libri JOIN scrive on Libri.codiceLibro=scrive.codiceLibro JOIN Autori ON Autori.codiceAutore=scrive.codiceAutore WHERE titolo LIKE '%$search%' OR nomecognome LIKE '%$search%' OR categoria LIKE '%$categoria%'";
+            }
+        }
+        else{
+            $sql = "SELECT distinct Libri.codiceLibro, titolo, copertina FROM Libri JOIN scrive on Libri.codiceLibro=scrive.codiceLibro JOIN Autori ON Autori.codiceAutore=scrive.codiceAutore WHERE titolo LIKE '%$search%' OR nomecognome LIKE '%$search%'";
+        }
+
         $result = mysqli_query($conn,$sql);
         $numrighe = mysqli_num_rows($result);
         if($numrighe > 0){
             echo "<a class='sottotitoli'>Ci sono ".$numrighe." risultati</a>";
-            $currentPage=creaLista($result,$numrighe,$limite,$sezione);
+            $currentPage = creaLista($result,$numrighe,$limite,$sezione);
         }
         else{
             echo "Non ci sono risultati per la ricerca!";
@@ -81,26 +92,46 @@
     }
 
     else{
-        $sql = "SELECT * FROM Libri";
+        if(isset($_GET['cat'])){
+            $categoria=$_GET['cat'];
+            if($categoria=='all'){
+                $sql = "SELECT * FROM Libri";
+            }
+            else{
+                $sql = "SELECT * FROM Libri WHERE categoria LIKE '%$categoria%'";
+            }
+        }
+        else{
+            $sql = "SELECT * FROM Libri";
+        }
         $result = mysqli_query($conn,$sql);
-        $numrighe=mysqli_num_rows($result);
-        $currentPage=creaLista($result,$numrighe,$limite,$sezione);
+        $numrighe = mysqli_num_rows($result);
+        $currentPage = creaLista($result,$numrighe,$limite,$sezione);
     }
     ?>
 
     <div class="pagination">
         <?php
+
         if (isset($_GET['search'])){
             $search="&search=".$_GET['search'];
         }
         else{
             $search="";
         }
+
+        if(isset($_GET['cat'])){
+            $categoria="&cat=".$_GET['cat'];
+        }
+        else{
+            $categoria="";
+        }
+
         if($sezione!=0){
             $sez=$sezione-1;
-            $page=$currentPage-1;
-            echo "<a href='lista.php?page=1&sez=0$search'>&laquo;</a>";
-            echo "<a href='lista.php?page=$page&sez=$sez$search'>&lsaquo;</a>";
+            $page=10*$sezione-1;
+            echo "<a href='lista.php?page=1&sez=0$search$categoria'>&laquo;</a>";
+            echo "<a href='lista.php?page=$page&sez=$sez$search$categoria'>&lsaquo;</a>";
             $currentPage=$currentPage+2;
         }
         else{
@@ -114,17 +145,19 @@
                 $i=1;
             }
             $sez=floor($i/10);
-            echo "<a href='lista.php?page=$i&sez=$sez$search'>$i</a>";
+            echo "<a href='lista.php?page=$i&sez=$sez$search$categoria'>$i</a>";
         }
         if($sezione!=$sezioni){
-            echo "<a href='lista.php?page=$pagine&sez=$sezioni$search'>&raquo;</a>";
+            echo "<a href='lista.php?page=$pagine&sez=$sezioni$search$categoria'>&raquo;</a>";
         }
-
-        //TODO fixare ricerca
 
         ?>
     </div>
+
 </div>
+
+
+
 
 
 <script>
@@ -134,14 +167,13 @@
 
 
 <?php
+
 echo"
 <script type='text/javascript'>
     var libro = ".json_encode($libro)."
     autocomplete(document.getElementById('myInput'), libro);
 </script>
 ";
-?>
 
-<?php
 include 'footer.php';
 ?>
