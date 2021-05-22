@@ -1,4 +1,7 @@
-html{background-color: #222}
+html{
+
+
+    background-color: #222}
 
 body{font-family: 'Cairo', sans-serif;}
 
@@ -98,14 +101,11 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
 /*! Sfondo */
 
 .background{
-    height: 400px;
-    display: flex;
+    max-height: 100px;
     width: 100%;
-    align-items: center;
-    text-align: center;
-    background: black;
-    background-size: cover;
+    transform: translateY(-5%);
 }
+
 
 
 #video-background{
@@ -117,9 +117,14 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
 
 .logoSfondo{
     background: url("LogoSfondo.png")  center center;
-    height: 500px;
-    align-items: center;
-    transform: translateY(-50%) scale(0.4);
+    width: 700px;
+    height: 300px;
+    max-width: 400px;
+    max-height: 200px;
+    background-size: cover;
+    margin-right: auto;
+    margin-left: auto;
+    transform: scale(1.75) translateY(-40%);
 }
 
 
@@ -128,8 +133,8 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
 .cerca{
     width: 100%;
     text-align: center;
-    transform: translateY(-175%);
-    z-index: 99;
+    z-index: 3;
+    transform: translateY(-30%);
 }
 
 .barra_ricerca{
@@ -163,7 +168,6 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
     height: 1px;
     width: 90%;
     background-color: gray;
-    transform: translateY(-20000%);
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -184,7 +188,7 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
 .bacheca{
     width: 100%;
     text-align: center;
-    transform: translateY(-20%);
+    position: relative;
     z-index: -1;
 }
 

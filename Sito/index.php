@@ -5,20 +5,19 @@
 
     <script src="autocompilazione.js" type="text/javascript"></script>
 
-    <div class="background">
-
-        <video autoplay muted loop id="video-background">
-            <source src="video-background2.mp4" type="video/mp4">
+    <div>
+        <video class="background" autoplay muted loop id="video-background">
+            <source src="video-backgroundfix.mp4" type="video/mp4">
         </video>
-
     </div>
-    <div class="logoSfondo"></div>
+
+    <div class="logoSfondo headline"></div>
 
     <div class="cerca headline">
 
         <h1 class="sottotitoli giallo">CERCA UN LIBRO O UN FUMETTO</h1>
 
-        <p class="paragrafi">Inserisci il titolo o l'isbn di un libro o fumetto per effettuare la ricerca.</p>
+        <p class="paragrafi">Inserisci il titolo o l'autore di un libro o fumetto per effettuare la ricerca.</p>
 
         <form autocomplete="off" action="lista.php" method="POST">
             <div class="autocomplete">
@@ -32,12 +31,12 @@
     </div>
 
 
-    <div class="linea_orizzontale"></div>
+    <div class="linea_orizzontale mt2"></div>
 
 
     <!-- BACHECA -->
 
-    <div class="bacheca headline">
+    <div class="bacheca mt2 headline">
 
         <div class="instazione_bacheca">
             <h1 class="sottotitoli giallo">ULTIME USCITE</h1>
