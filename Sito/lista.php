@@ -25,6 +25,7 @@
     <form action="lista.php" method="GET">
         <div>
             <div class="ricerca_2">
+                <label class="bianco" for="cat">Seleziona una categoria:</label>
                 <select class="bianco" name="cat">
                     <?php
                     $conn=OpenCon();
@@ -40,7 +41,7 @@
                 </select>
             </div>
             <div class="bottone_centrato">
-                <input class="button" type="submit">
+                <input class="button" type="submit" value="Filtra">
             </div>
         </div>
     </form>
@@ -48,8 +49,37 @@
 
 <h1 class="sottotitoli giallo centroTesto mt2 headline">LISTA DI LIBRI</h1>
 
+<?php
+if((isset($_GET['cat']) and $_GET['cat']!="all") or isset($_GET['search'])){
+    echo "<div class='small-container paragrafi'>";
+    echo "<a>FILTRA PER</a>";
+    echo "<ul>";
+        if(isset($_GET['cat'])){
+            $categoria=$_GET['cat'];
+            echo "
+            <li>
+            <a>Categoria:</a> ".$categoria."<a href='lista.php'> X</a>
+            </li>
+            ";
+        }
+        if (isset($_GET['search'])) {
+            $ricerca=$_GET['search'];
+            echo "
+            <li>
+            <a>Ricerca: </a>".$ricerca."<a href='lista.php'> X</a>
+            </li>
+            ";
+        }
+    echo "</ul>";
+echo "</div>";
+}
+echo "<br>"
+?>
+
+
 <div class="small-container headline">
     <?php
+
     if(isset($_GET['sez'])){
         $sezione=$_GET['sez'];
     }
@@ -87,7 +117,8 @@
             $currentPage = creaLista($result,$numrighe,$limite,$sezione);
         }
         else{
-            echo "Non ci sono risultati per la ricerca!";
+            echo "<a class='paragrafi'>Non ci sono risultati per la ricerca!</a>";
+            $currentPage=0;
         }
     }
 
@@ -147,7 +178,7 @@
             $sez=floor($i/10);
             echo "<a href='lista.php?page=$i&sez=$sez$search$categoria'>$i</a>";
         }
-        if($sezione!=$sezioni){
+        if($sezione!=$sezioni and $pagine>=0){
             echo "<a href='lista.php?page=$pagine&sez=$sezioni$search$categoria'>&raquo;</a>";
         }
 
