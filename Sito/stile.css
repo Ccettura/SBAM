@@ -36,7 +36,7 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
     background: #2a2a2e;
     max-height: 65px;
     position: relative;
-    z-index: 1;
+    z-index: 100;
 }
 
 .contenuto_header{
@@ -100,31 +100,61 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
 
 /*! Sfondo */
 
-.background{
-    max-height: 100px;
+#hero{
+    height: 100vh;
     width: 100%;
-    transform: translateY(-5%);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
 }
 
+#hero video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -150;
+    object-fit: cover;
+}
 
+#hero .caption{
+    position: relative;
+    z-index: 20;
+    text-align: center;
+}
 
-#video-background{
-    min-height: 400px;
-    min-width: 1920px;
+#hero::after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
 
+#hero .texture{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    z-index: 15;
+    top: 0;
+    left: 0;
+    background: url("texture.png");
 }
 
 
 .logoSfondo{
     background: url("LogoSfondo.png")  center center;
-    width: 700px;
-    height: 300px;
-    max-width: 400px;
-    max-height: 200px;
+    width: 100%;
+    min-height: 200px;
+    max-width: 750px;
     background-size: cover;
     margin-right: auto;
     margin-left: auto;
-    transform: scale(1.75) translateY(-40%);
+    transform: translateY(-50%);
 }
 
 
@@ -133,8 +163,8 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
 .cerca{
     width: 100%;
     text-align: center;
-    z-index: 3;
     transform: translateY(-30%);
+    z-index: 3;
 }
 
 .barra_ricerca{
@@ -168,17 +198,6 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
     height: 1px;
     width: 90%;
     background-color: gray;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    z-index: -1;
-}
-
-.linea_orizzontale2{
-    height: 1px;
-    width: 90%;
-    background-color: gray;
-    transform: translateY(10500%);
     margin-left: auto;
     margin-right: auto;
     position: relative;

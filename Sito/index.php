@@ -5,38 +5,42 @@
 
     <script src="autocompilazione.js" type="text/javascript"></script>
 
-    <div>
-        <video class="background" autoplay muted loop id="video-background">
-            <source src="video-backgroundfix.mp4" type="video/mp4">
-        </video>
-    </div>
 
-    <div class="logoSfondo headline"></div>
+    <!-- VIDEO BACKGROUND -->
 
-    <div class="cerca headline">
+        <div id="hero">
 
-        <h1 class="sottotitoli giallo">CERCA UN LIBRO O UN FUMETTO</h1>
+            <div class="texture"></div>
 
-        <p class="paragrafi">Inserisci il titolo o l'autore di un libro o fumetto per effettuare la ricerca.</p>
+            <video autoplay muted loop preload="auto">
+                <source src="videoBackground.mp4" type="video/mp4">
+            </video>
 
-        <form autocomplete="off" action="lista.php" method="POST">
-            <div class="autocomplete">
-                <div>
-                    <input id="myInput" class="input_codice" atype="text" name="search">
-                    <button class="button" type="submit" name="submit">Cerca</button>
+            <div class="caption">
+                <div class="logoSfondo headline mt1"></div>
+
+                <div class="cerca headline">
+                    <h1 class="sottotitoli giallo">CERCA UN LIBRO O UN FUMETTO</h1>
+
+                    <p class="paragrafi">Inserisci il titolo o l'autore di un libro o fumetto per effettuare la ricerca.</p>
+
+                    <form autocomplete="off" action="lista.php" method="POST">
+                        <div class="autocomplete">
+                            <div>
+                                <input id="myInput" class="input_codice" atype="text" name="search">
+                                <button class="button" type="submit" name="submit">Cerca</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </form>
 
-    </div>
-
-
-    <div class="linea_orizzontale mt2"></div>
+        </div>
 
 
-    <!-- BACHECA -->
+ <!-- BACHECA -->
 
-    <div class="bacheca mt2 headline">
+    <div class="bacheca headline">
 
         <div class="instazione_bacheca">
             <h1 class="sottotitoli giallo">ULTIME USCITE</h1>
