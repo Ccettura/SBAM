@@ -30,7 +30,13 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
 .centroTesto{text-align: center;}
 
 
-/*! Barra Superiore */
+@media screen and (max-width: 1080px) {
+
+    .titoli{font-size: 40px; color: white; font-weight: bold;}
+
+}
+
+/*! header */
 
 .header{
     background: #2a2a2e;
@@ -54,17 +60,6 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
     display: block;
 }
 
-.logoCentrato{
-    width: 50%;
-    height: 200px;
-    text-align: center;
-    background: url("LogoSfondo.png") center center no-repeat;
-    background-size: 70%;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .menu{
     width: 100%;
     text-align: right;
@@ -75,7 +70,150 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
     color: gray;
 }
 
-.menu li a{padding: 15px; display: block;}
+.menu li a{
+    padding: 15px;
+    display: block;}
+
+.menuBurger{
+    display: none;
+}
+
+/*! Header smartphone */
+
+@media screen and (max-width: 1080px) {
+
+    .bacheca .sottotitoli{
+        font-size: 70px;
+    }
+
+    .bacheca .paragrafi{
+        font-size: 30px;
+    }
+
+    .menuBurger{
+        display: unset;
+    }
+
+    .header{
+        min-height:6vh;
+        background-color: transparent;
+    }
+
+    .logo{
+        position: absolute;
+        left: 80px;
+        top: 55px;
+        transform: scale(2);
+    }
+
+    .menu{
+        display: none;
+    }
+
+
+    /*! Animazione hamburger menu telefono */
+
+    #menu_burger{
+        width: 70px;
+        height: 70px;
+        margin: 50px 30px 20px 30px;
+        cursor: pointer;
+    }
+    .bar{
+        height: 8px;
+        width: 100%;
+        background-color: white;
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+    #bar1{
+        transform: translateY(-15px);
+    }
+    #bar3{
+        transform: translateY(15px);
+    }
+    .nav li a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .nav li a:hover{
+        font-weight: bold;
+        color: #FDE601;
+    }
+    .nav li{
+        list-style: none;
+        padding: 30px 0;
+        font-size: 50px;
+        text-align: right;
+    }
+    .nav{
+        margin: 0 20px;
+        transition: 0.3s ease;
+        display: none;
+    }
+    .menu-bg, #menu-bar{
+        top: 0;
+        right: 0;
+        position: absolute;
+    }
+    .menu-bg{
+        z-index: 1;
+        width: 0;
+        height: 150vh;
+        margin: 30px 0 20px 20px;
+        background: #2a2a2e;
+        transition: 0.3s ease;
+    }
+    #menu-bar_burger{
+        z-index: 2;
+        position: absolute;
+        right: 40px;
+        top: 10px;
+    }
+    .change-bg{
+        width: 400px;
+        height: 150vh;
+        transform: translateY(-30%);
+        position: fixed;
+    }
+    .change .bar{
+        background-color: white;
+        position: relative;
+        top: -13px;
+        right: -85px;
+    }
+    .change #bar1{
+        transform: translate(0%, 15px) rotateZ(-45deg);
+    }
+    .change #bar3{
+        transform: translateX(0%) rotate(45deg);
+    }
+    .change #bar2{
+        opacity: 0;
+        transform: translateX(0%)
+    }
+    .change{
+        display: block;
+    }
+
+
+}
+
+
+
+/*! Stile classi Home */
+
+.logoCentrato{
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    background: url("LogoSfondo.png") center center no-repeat;
+    background-size: 70%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .paginaAttiva{
     color: #FDE601;
@@ -97,8 +235,7 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
 }
 
 
-
-/*! Sfondo */
+/*! Hero Home */
 
 #hero{
     height: 100vh;
@@ -179,8 +316,6 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
     font-size: 13px;
 }
 
-
-
 .button{
     text-align: center;
     text-decoration: none;
@@ -225,6 +360,42 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
     margin-top: 20px;
     margin-left: 45%;
 }
+
+.small-container{
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+}
+
+.filtra_per{
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+}
+
+/* Filtro categoria smartphone */
+
+@media screen and (max-width: 1080px){
+
+    .categorie{
+        width: 80%;
+    }
+
+    .pagination{
+        font-size: 30px;
+    }
+
+    .filtra_per{
+        transform: scale(1.5);
+    }
+
+
+}
+
 
 /* Elementi per ricerca o per ultimi aggiunti */
 
@@ -273,11 +444,15 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
     transform: translateY(-5px);
 }
 
-.small-container{
-    max-width: 1080px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+/*! Bacheca smartphone */
+
+@media screen and (max-width: 1080px){
+    .row{
+        display: block;
+    }
+    .col-5 img{
+        width: 50%;
+    }
 }
 
 /* Dettagli sul singolo libro */
@@ -299,9 +474,9 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
 }
 
 
-/* Sezione finale */
+/* Footer */
 
-.sezioneFinale{
+.footer{
     width: 100%;
     height: 150px;
     background-color: #2a2a2e;
@@ -329,30 +504,36 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
 .CopyrightEPrivacy{
     display: flex;
     text-align: center;
-    width: 20%;
+    width: 50%;
     margin: auto;
     transform: translateY(100%);
 }
 
 .copy{
-    width: 100%;
+    width: 50%;
     max-height: 30px;
-    text-align: center;
     padding: 5px;
-    align-items: center;
-    margin: auto;
 }
 
 .privacy{
-    width: 100%;
+    width: 50%;
     max-height: 30px;
     padding: 5px;
-    text-align: center;
-    align-items: center;
-    margin: auto;
 }
 
-/* Barra */
+/* Footer smartphone */
+
+@media screen and (max-width: 1080px){
+
+    .CopyrightEPrivacy{
+        width: 60%;
+    }
+
+    .CopyrightEPrivacy h5{
+        font-size: 25px;
+    }
+
+}
 
 .barra{
     width: 1%;
@@ -405,20 +586,18 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
     margin: auto auto 100px;
 }
 
-/* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 6px; /* Some padding */
-    border: 1px solid #404040;/* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 6px; /* Bottom margin */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #404040;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    resize: vertical;
     background-color: #222;
 }
 
-/* Style the submit button with a specific background color etc */
 input[type=submit] {
     padding: 12px 20px;
     border: none;
@@ -426,13 +605,11 @@ input[type=submit] {
     cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
     background-color: #ffff00;
     color: black;
 }
 
-/* Add a background color and some padding around the form */
 .container {
     border-radius: 5px;
     padding: 20px;
@@ -441,6 +618,45 @@ input[type=submit]:hover {
 
 .tasto_submit{
     text-align: center;
+}
+
+/* About smartphone */
+
+@media screen and (max-width: 1080px){
+
+    .contatti{
+        width: 100%;
+    }
+
+    .contatti_content{
+        width: 100%;
+    }
+
+    .contatti_content h1{
+        font-size: 80px;
+    }
+
+    .contatti_content h2{
+        font-size: 27px;
+    }
+
+    .freccie{
+        display: none;
+    }
+
+    .sezione_feedback .container{
+        width: 100%;
+    }
+
+    .sezione_feedback .container p{
+        font-size: 30px;
+    }
+
+    .sezione_feedback{
+        height: 52vh;
+    }
+
+
 }
 
 
@@ -473,16 +689,11 @@ input[type=submit]:hover {
     margin-left: auto;
 }
 
-.riga1{
+.riga{
     display: flex;
     height: 400px;
     width: 100%;
-}
-.riga2{
-    display: flex;
-    height: 400px;
-    width: 100%;
-    margin-top: 100px;
+
 }
 
 .griglia{
@@ -494,6 +705,39 @@ input[type=submit]:hover {
     width: 50%;
     padding: 30px;
     text-align: center;
+}
+
+
+/* About smartphone */
+
+@media screen and (max-width: 1080px){
+
+    .aboutUs{
+        width: 80%;
+    }
+
+    .riga{
+        display: inline-block;
+    }
+
+    .elemento{
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+    }
+
+    .griglia h1{
+        font-size: 50px;
+    }
+
+    .griglia p{
+        font-size: 30px;
+    }
+
+    .copertina_about{
+        transform: translateY(10%);
+    }
+
 }
 
 .autocomplete {
@@ -540,27 +784,35 @@ input[type=submit] {
 }
 
 .autocomplete-active {
-    /*when navigating through the items using the arrow keys:*/
     background-color: #ffff00 !important;
     color: black;
 }
 
-/* Pagination links */
-.pagination a {
-    color: white;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color .3s;
+/* Numerazione pagine */
+
+.pagination{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 40px;
+    text-align: center;
 }
 
-/* Style the active/current link */
+.pagination a {
+    color: white;
+    padding: 4px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .pagination a.active {
     background-color: #ffff00;
     color: black;
 }
 
-/* Add a grey background color on mouse-over */
 .pagination a:hover:not(.active) {background-color: #ddd;}
 
 
@@ -568,18 +820,16 @@ input[type=submit] {
 
 .custom-select {
     position: relative;
-    font-family: Arial;
 }
 
 .custom-select select {
-    display: none; /*hide original SELECT element:*/
+    display: none;
 }
 
 .select-selected {
     background-color: #ffff00;
 }
 
-/*style the arrow inside the select element:*/
 .select-selected:after {
     position: absolute;
     content: "";
@@ -591,13 +841,11 @@ input[type=submit] {
     border-color: #fff transparent transparent transparent;
 }
 
-/*point the arrow upwards when the select box is open (active):*/
 .select-selected.select-arrow-active:after {
     border-color: transparent transparent #fff transparent;
     top: 7px;
 }
 
-/*style the items (options), including the selected item:*/
 .select-items div,.select-selected {
     color: #ffffff;
     padding: 8px 16px;
@@ -607,7 +855,6 @@ input[type=submit] {
     user-select: none;
 }
 
-/*style items (options):*/
 .select-items {
     position: absolute;
     background-color: #ffff00;
@@ -617,7 +864,6 @@ input[type=submit] {
     z-index: 99;
 }
 
-/*hide the items when the select box is closed:*/
 .select-hide {
     display: none;
 }
@@ -625,6 +871,14 @@ input[type=submit] {
 .select-items div:hover, .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
 }
+
+
+
+
+
+
+
+
 
 *,
 *:before,

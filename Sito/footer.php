@@ -1,4 +1,4 @@
-<div class="sezioneFinale">
+<div class="footer">
 
     <div class="social">
         <a href="https://www.facebook.com"><img src="facebook.png" alt="30" height="30" class="facebook"/></a>

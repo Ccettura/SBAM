@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02a3c75b-0cd7-4817-99cd-8e4d854b5898" name="Default Changelist" comment="Versione 1">
-      <change afterPath="$PROJECT_DIR$/Sito/texture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sito/videoBackground.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sito/animanzione_bottone.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/lista.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/lista.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito/stile.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/stile.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,17 +85,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.contatti.php">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FeedbackPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ASBAM/SBAM/Sito/Pagine/Feedbacks/FeedbackPage.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -152,7 +144,10 @@
       <workItem from="1621541025202" duration="3006000" />
       <workItem from="1621544236954" duration="321000" />
       <workItem from="1621883263529" duration="3523000" />
-      <workItem from="1622018328810" duration="5870000" />
+      <workItem from="1622018328810" duration="9518000" />
+      <workItem from="1622050181722" duration="590000" />
+      <workItem from="1622106254296" duration="8802000" />
+      <workItem from="1622137182859" duration="6963000" />
     </task>
     <task id="LOCAL-00001" summary="Versione 0">
       <created>1619454482720</created>
@@ -308,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621544003476</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Versione 1">
+      <created>1622024799008</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1622024799008</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

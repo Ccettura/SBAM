@@ -47,7 +47,7 @@
             <p class="paragrafi">Dai un'occhiata alle ultime uscite.</p>
         </div>
 
-        <div class="small-container">
+        <div class="small-container mt1">
             <div class="row">
                 <?php
                 $conn=OpenCon();
@@ -56,7 +56,7 @@
                 while ($row = mysqli_fetch_assoc($result)){
                     echo "
                     <div class='col-5'>
-                        <a href='libro.php?cod=".$row['codiceLibro']."'> <p class='sottotitoli'>".$row['titolo']."</p></a>
+                        <a href='libro.php?cod=".$row['codiceLibro']."'> <p class='bianco'>".$row['titolo']."</p></a>
                         <a href='libro.php?cod=".$row['codiceLibro']."'> <img src='copertine/".$row['copertina']."'/> </a>
                     </div>";
                 }

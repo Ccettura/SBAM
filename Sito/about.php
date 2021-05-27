@@ -23,9 +23,9 @@ include 'header.php';
 
 <div class="griglia headline">
 
-    <h1 class="giallo sottotitoli centroTesto mt3">IL NOSTRO TEAM</h1>
+    <h1 class="giallo sottotitoli centroTesto mt2">▼ IL NOSTRO TEAM ▼</h1>
 
-    <div class="riga1 mt1">
+    <div class="riga mt1">
         <div class="elemento">
             <h1 class="giallo sottotitoli">Antonello Lagalante</h1>
             <p class="bianco paragrafi">CEO & Founder</p>

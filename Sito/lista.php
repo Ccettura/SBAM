@@ -49,35 +49,37 @@
 
 <h1 class="sottotitoli giallo centroTesto mt2 headline">LISTA DI LIBRI</h1>
 
-<?php
-if((isset($_GET['cat']) and $_GET['cat']!="all") or isset($_GET['search'])){
-    echo "<div class='small-container paragrafi'>";
-    echo "<a>FILTRA PER</a>";
-    echo "<ul>";
-        if(isset($_GET['cat'])){
-            $categoria=$_GET['cat'];
-            echo "
-            <li>
-            <a>Categoria:</a> ".$categoria."<a href='lista.php'> X</a>
-            </li>
-            ";
-        }
-        if (isset($_GET['search'])) {
-            $ricerca=$_GET['search'];
-            echo "
-            <li>
-            <a>Ricerca: </a>".$ricerca."<a href='lista.php'> X</a>
-            </li>
-            ";
-        }
-    echo "</ul>";
-echo "</div>";
-}
-echo "<br>"
-?>
+
+<div class="filtra_per mt1">
+    <?php
+    if((isset($_GET['cat']) and $_GET['cat']!="all") or isset($_GET['search'])){
+        echo "<div class='small-container paragrafi'>";
+        echo "<ul>";
+            if(isset($_GET['cat'])){
+                $categoria=$_GET['cat'];
+                echo "
+                <li class='giallo headline'>
+                <a>▼ Categoria:</a> ".$categoria." <a>▼</a>
+                </li>
+                ";
+            }
+            if (isset($_GET['search'])) {
+                $ricerca=$_GET['search'];
+                echo "
+                <li class='giallo headline'>
+                <a>Ricerca: </a>".$ricerca."
+                </li>
+                ";
+            }
+        echo "</ul>";
+    echo "</div>";
+    }
+    echo "<br>"
+    ?>
+</div>
 
 
-<div class="small-container headline">
+<div class="small-container mt1 headline">
     <?php
 
     if(isset($_GET['sez'])){
@@ -140,6 +142,7 @@ echo "<br>"
         $currentPage = creaLista($result,$numrighe,$limite,$sezione);
     }
     ?>
+</div>
 
     <div class="pagination">
         <?php
@@ -184,8 +187,6 @@ echo "<br>"
 
         ?>
     </div>
-
-</div>
 
 
 

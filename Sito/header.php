@@ -30,8 +30,27 @@
             <li><a class="grigio cool" href="about.php">About</a></li>
             <li><a class="grigio cool" href="contatti.php">Contatti</a></li>
         </ul>
+
+        <div class="menuBurger" id="menu-bar_burger">
+            <div id="menu_burger" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <ul class="nav" id="nav">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="lista.php">Lista</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="contatti.php">Contatti</a></li>
+            </ul>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+
     </div>
+
 </div>
+
+<script src="animanzione_bottone.js"></script>
 
 <script type="text/javascript">
     const currentLocation = location.href;
