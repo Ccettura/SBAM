@@ -47,23 +47,23 @@
             <p class="paragrafi">Dai un'occhiata alle ultime uscite.</p>
         </div>
 
-        <div class="small-container">
-            <div class="row">
-                <?php
-                $conn=OpenCon();
-                $sql = "SELECT codiceLibro,titolo,copertina,dataPubblicazione FROM Libri ORDER BY dataPubblicazione DESC LIMIT 5";
-                $result = mysqli_query($conn,$sql);
-                while ($row = mysqli_fetch_assoc($result)){
-                    echo "
+    </div>
+
+    <div class="small-container">
+        <div class="row">
+            <?php
+            $conn=OpenCon();
+            $sql = "SELECT codiceLibro,titolo,copertina,dataPubblicazione FROM Libri ORDER BY dataPubblicazione DESC LIMIT 5";
+            $result = mysqli_query($conn,$sql);
+            while ($row = mysqli_fetch_assoc($result)){
+                echo "
                     <div class='col-5'>
                         <a href='libro.php?cod=".$row['codiceLibro']."'> <p class='sottotitoli'>".$row['titolo']."</p></a>
                         <a href='libro.php?cod=".$row['codiceLibro']."'> <img src='copertine/".$row['copertina']."'/> </a>
                     </div>";
-                }
-                ?>
-            </div>
+            }
+            ?>
         </div>
-
     </div>
 
 
