@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02a3c75b-0cd7-4817-99cd-8e4d854b5898" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="02a3c75b-0cd7-4817-99cd-8e4d854b5898" name="Default Changelist" comment="Versione 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito/feedbacks.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/feedbacks.php" afterDir="false" />
     </list>
@@ -35,8 +34,6 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
-      <path value="C:/php" />
-      <path value="C:/php/pear" />
       <path value="$PROJECT_DIR$/../../../../php" />
       <path value="$PROJECT_DIR$/../../../../php/pear" />
     </include_path>
@@ -104,9 +101,9 @@
       <list>
         <item itemvalue="JavaScript Debug.contatti.php" />
         <item itemvalue="JavaScript Debug.feedbacks.php" />
-        <item itemvalue="JavaScript Debug.index.php" />
         <item itemvalue="PHP Script.feedbacks.php" />
         <item itemvalue="JavaScript Debug.FeedbackPage.html" />
+        <item itemvalue="JavaScript Debug.index.php" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +136,8 @@
       <workItem from="1621541025202" duration="3006000" />
       <workItem from="1621544236954" duration="321000" />
       <workItem from="1621883263529" duration="3523000" />
-      <workItem from="1622018328810" duration="5870000" />
+      <workItem from="1622138029910" duration="26000" />
+      <workItem from="1622480828674" duration="1806000" />
     </task>
     <task id="LOCAL-00001" summary="Versione 0">
       <created>1619454482720</created>
