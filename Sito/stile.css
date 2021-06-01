@@ -397,7 +397,7 @@ h1,h2,h3,h4,h5, p{color: black; padding-bottom: 20px; line-height: 1.4;}
 }
 
 
-/* Elementi per ricerca o per ultimi aggiunti */
+/* Elementi per ricerca */
 
 .container{
     max-width: 1300px;
