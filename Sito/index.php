@@ -49,6 +49,8 @@
 
     </div>
 
+    <!-- ULTIMI 5 LIBRI USCITI -->
+
     <div class="small-container">
         <div class="row">
             <?php
@@ -67,21 +69,22 @@
     </div>
 
 
-
 <?php
+
+// Script per l'autocompletamento della ricerca
 
 $libri = mysqli_query($conn,"SELECT titolo FROM Libri");
 $libri = mysqli_fetch_all($libri);
 for($i=0;$i<count($libri);$i++){
     $libro[$i]=$libri[$i][0];
 }
-
 echo"
 <script type='text/javascript'>
     var libro = ".json_encode($libro)."
     autocomplete(document.getElementById('myInput'), libro);
 </script>
 ";
+
 ?>
 
 

@@ -1,4 +1,5 @@
 <?php
+// ESTRAZIONE LIBRO DAL DATABASE
 include 'connessione.php';
 $conn = OpenCon();
 $query = "select * from Libri JOIN scrive ON Libri.codiceLibro=scrive.codiceLibro JOIN Autori ON scrive.codiceAutore=Autori.codiceAutore JOIN Editori ON Libri.codiceEditore=Editori.codiceEditore where Libri.codiceLibro=".$_GET['cod'];
@@ -8,7 +9,6 @@ if (!$result) {
     exit;
 }
 $row=mysqli_fetch_assoc($result);
-
 $query = "select nomecognome from Autori JOIN scrive ON Autori.codiceAutore=scrive.codiceAutore WHERE scrive.codiceLibro=".$_GET['cod'];
 $autori = mysqli_query($conn,$query);
 
@@ -16,7 +16,8 @@ include 'header.php';
 ?>
 
 
-<!------------DETTAGLI PRODOTTO------------>
+<!------------DETTAGLI LIBRO------------>
+
 <div class="container singolo-libro">
     <div class="row">
         <div class="col">

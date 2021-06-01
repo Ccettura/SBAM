@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02a3c75b-0cd7-4817-99cd-8e4d854b5898" name="Default Changelist" comment="Versione 1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/Pagine/Feedbacks/feedbacksDB.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/autocompilazione.js" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/autocompilazione.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/connessione.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/connessione.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/contatti.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/contatti.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/feedbacks.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/feedbacks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sito/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/libro.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/libro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/lista.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/lista.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/paginazione.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/paginazione.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +88,17 @@
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.contatti.php">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FeedbackPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ASBAM/SBAM/Sito/Pagine/Feedbacks/FeedbackPage.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -136,7 +159,9 @@
       <workItem from="1621544236954" duration="321000" />
       <workItem from="1621883263529" duration="3523000" />
       <workItem from="1622138029910" duration="26000" />
-      <workItem from="1622480828674" duration="2126000" />
+      <workItem from="1622480828674" duration="2150000" />
+      <workItem from="1622489140587" duration="5248000" />
+      <workItem from="1622564035004" duration="2892000" />
     </task>
     <task id="LOCAL-00001" summary="Versione 0">
       <created>1619454482720</created>
@@ -299,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622483078859</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Versione 1">
+      <created>1622483264239</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1622483264239</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -6,6 +6,9 @@
 
 <script src="autocompilazione.js" type="text/javascript"></script>
 
+
+<!-- BARRA DI RICERCA LIBRI + AUTOCOMPLETAMENTO -->
+
 <div class="sezioneRicerca headline">
 
     <div class="instazione_bacheca">
@@ -20,6 +23,9 @@
             </div>
     </form>
 </div>
+
+
+<!-- FILTRO PER CATEGORIE -->
 
 <div class="categorie mt2 headline">
     <form action="lista.php" method="GET">
@@ -46,6 +52,9 @@
         </div>
     </form>
 </div>
+
+
+<!-- LISTA DI LIBRI -->
 
 <h1 class="sottotitoli giallo centroTesto mt2 headline">LISTA DI LIBRI</h1>
 
@@ -77,6 +86,8 @@ echo "<br>"
 ?>
 
 
+<!-- SELEZIONE LIBRI DA VISUALIZZARE -->
+
 <div class="small-container headline">
     <?php
 
@@ -88,15 +99,20 @@ echo "<br>"
     }
 
     $conn=OpenCon();
-    $limite=15;
+    $limite=15; // Limite di libri per pagina
     $libri = mysqli_query($conn,"SELECT titolo FROM Libri");
     $libri = mysqli_fetch_all($libri);
     for($i=0;$i<count($libri);$i++){
         $libro[$i] = $libri[$i][0];
     }
 
+
+    // RICERCA ATTIVA
+
     if (isset($_GET['search'])) {
         $search = mysqli_real_escape_string($conn, $_GET['search']);
+
+        // FILTRO CATEGORIA ATTIVO
         if(isset($_GET['cat'])){
             $categoria = $_GET['cat'];
             if($categoria=='all'){
@@ -106,10 +122,13 @@ echo "<br>"
                 $sql = "SELECT distinct Libri.codiceLibro, titolo, copertina FROM Libri JOIN scrive on Libri.codiceLibro=scrive.codiceLibro JOIN Autori ON Autori.codiceAutore=scrive.codiceAutore WHERE titolo LIKE '%$search%' OR nomecognome LIKE '%$search%' OR categoria LIKE '%$categoria%'";
             }
         }
+
+        // NESSUN FILTRO PER CATEGORIA
         else{
             $sql = "SELECT distinct Libri.codiceLibro, titolo, copertina FROM Libri JOIN scrive on Libri.codiceLibro=scrive.codiceLibro JOIN Autori ON Autori.codiceAutore=scrive.codiceAutore WHERE titolo LIKE '%$search%' OR nomecognome LIKE '%$search%'";
         }
 
+        // STAMPA DELLA LISTA DI LIBRI
         $result = mysqli_query($conn,$sql);
         $numrighe = mysqli_num_rows($result);
         if($numrighe > 0){
@@ -122,24 +141,38 @@ echo "<br>"
         }
     }
 
+
+    // NESSUNA RICERCA ATTIVA
+
     else{
+
+        // FILTRO CATEGORIA ATTIVO
         if(isset($_GET['cat'])){
             $categoria=$_GET['cat'];
+
             if($categoria=='all'){
                 $sql = "SELECT * FROM Libri";
             }
+
             else{
                 $sql = "SELECT * FROM Libri WHERE categoria LIKE '%$categoria%'";
             }
         }
+
+        // NESSUN FILTRO PER CATEGORIA
         else{
             $sql = "SELECT * FROM Libri";
         }
+
+        // STAMPA DELLA LISTA DI LIBRI
         $result = mysqli_query($conn,$sql);
         $numrighe = mysqli_num_rows($result);
         $currentPage = creaLista($result,$numrighe,$limite,$sezione);
     }
     ?>
+
+
+    <!-- DIVISIONE PER PAGINE -->
 
     <div class="pagination">
         <?php
@@ -188,17 +221,15 @@ echo "<br>"
 </div>
 
 
-
-
-
+<!-- EVIDENZIA LA PAGINA CORRENTE -->
 <script>
     var div = document.getElementsByClassName("pagination")[0];
     div.children[<?php echo ($currentPage-10*($sezione)) ?>].classList.add("active");
 </script>
 
 
+<!-- SCRIPT PER L'AUTOCOMPLETAMENTO -->
 <?php
-
 echo"
 <script type='text/javascript'>
     var libro = ".json_encode($libro)."

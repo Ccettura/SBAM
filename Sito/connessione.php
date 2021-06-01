@@ -1,5 +1,7 @@
 <?php
 
+// APERTURA CONNESSIONE COL DATABASE
+
 function OpenCon()
 {
     $dbhost = "mattone.ddns.net";
@@ -11,6 +13,9 @@ function OpenCon()
 
     return $conn;
 }
+
+
+// CHIUSURA CONNESSIONE COL DATABASE
 
 function CloseCon($conn)
 {

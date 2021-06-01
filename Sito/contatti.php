@@ -6,6 +6,8 @@ include 'header.php';
 <div class="logoCentrato headline"></div>
 
 
+<!-- FORM PER INVIARE UNA MAIL DI FEEDBACK -->
+
 <div class="contatti headline">
 
     <div class="freccie"></div>

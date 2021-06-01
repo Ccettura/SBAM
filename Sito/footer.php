@@ -1,10 +1,18 @@
+
+<!-- FINE DELLA PAGINA HTML -->
+
 <div class="sezioneFinale">
+
+    <!-- LINK AI SOCIAL -->
 
     <div class="social">
         <a href="https://www.facebook.com"><img src="facebook.png" alt="30" height="30" class="facebook"/></a>
         <a href="https://twitter.com"><img src="twitter.png" alt="30" height="30" class="twitter"/></a>
         <a href="https://www.instagram.com"><img src="instagram.png" alt="30" height="30" class="instagram"/></a>
     </div>
+
+
+    <!-- INFO SUL COPYRIGHT -->
 
     <div class="CopyrightEPrivacy">
         <div class="copy">
@@ -21,7 +29,7 @@
 </div>
 
 
-<!-- SCRIPT -->
+<!-- SCRIPT PER LA COMPARSA DEGLI OGGETTI CON LO SCROLLING -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js" integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA==" crossorigin="anonymous"></script>
 

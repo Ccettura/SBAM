@@ -4,6 +4,8 @@ include 'header.php';
 ?>
 
 
+<!-- INFORMAZIONI SUL TEAM DI SVILUPPO -->
+
 <div class="copertina_about">
     <h1 class="giallo about">ABOUT</h1>
     <h2 class="bianco who">WHO WE ARE</h2>

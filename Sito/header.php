@@ -1,3 +1,6 @@
+
+<!-- INIZIO DELLA PAGINA HTML -->
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -11,10 +14,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css" integrity="sha512-BiFZ6oflftBIwm6lYCQtQ5DIRQ6tm02svznor2GYQOfAlT3pnVJ10xCrU3XuXnUrWQ4EG8GKxntXnYEdKY0Ugg==" crossorigin="anonymous" />
 
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-
 </head>
 
 <body>
+
+
+<!-- BARRA SUPERIORE CON LOGO E MENU -->
 
 <div class="header">
     <div class="contenuto_header">
@@ -32,6 +37,9 @@
         </ul>
     </div>
 </div>
+
+
+<!-- SCRIPT PER EVIDENZIARE LA SEZIONE CORRENTE -->
 
 <script type="text/javascript">
     const currentLocation = location.href;

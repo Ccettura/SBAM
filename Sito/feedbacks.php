@@ -7,19 +7,17 @@ include 'header.php';
 <div class="logoCentrato headline"></div>
 
 
-<?php
-// get the post records
+<!-- INVIA IL MESSAGGIO DI FEEDBACK E LO SALVA NEL DATABASE (RESTITUENDO ESITO POSITIVO ALL'UTENTE) -->
 
+<?php
 $txtEmail = $_POST['mail'];
 $txtType = $_POST['type'];
 $txtSubject = $_POST['subject'];
-
 
 echo "<br> La tua mail è $txtEmail ";
 echo "<br> Il tipo di richiesta è $txtType ";
 echo "<br> Il testo è $txtSubject";
 
-// database insert SQL code
 $conn=OpenCon();
 $sql = "INSERT INTO `Feedbacks` (`fldEmail`, `fldType`, `fldMessage`) VALUES ('".$txtEmail."', '".$txtType."', '".$txtSubject."')";
 $rs = mysqli_query($conn, $sql);
