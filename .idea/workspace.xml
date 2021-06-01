@@ -75,7 +75,7 @@
       <recent name="F:\Progetti\ASBAM\Sito\Pagine" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.contatti.php">
+  <component name="RunManager" selected="JavaScript Debug.feedbacks.php">
     <configuration name="FeedbackPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ASBAM/SBAM/Sito/Pagine/Feedbacks/FeedbackPage.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -98,8 +98,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.contatti.php" />
         <item itemvalue="JavaScript Debug.feedbacks.php" />
+        <item itemvalue="JavaScript Debug.contatti.php" />
         <item itemvalue="PHP Script.feedbacks.php" />
         <item itemvalue="JavaScript Debug.FeedbackPage.html" />
         <item itemvalue="JavaScript Debug.index.php" />
