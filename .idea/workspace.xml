@@ -3,6 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="02a3c75b-0cd7-4817-99cd-8e4d854b5898" name="Default Changelist" comment="Versione 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/Pagine/Feedbacks/feedbacksDB.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/autocompilazione.js" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/autocompilazione.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/connessione.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/connessione.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/contatti.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/contatti.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/feedbacks.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/feedbacks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/libro.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/libro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/paginazione.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/paginazione.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +40,6 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
-      <path value="C:/php" />
-      <path value="C:/php/pear" />
       <path value="$PROJECT_DIR$/../../../../php" />
       <path value="$PROJECT_DIR$/../../../../php/pear" />
     </include_path>
@@ -137,12 +142,10 @@
       <workItem from="1621541025202" duration="3006000" />
       <workItem from="1621544236954" duration="321000" />
       <workItem from="1621883263529" duration="3523000" />
-      <workItem from="1622018328810" duration="9518000" />
-      <workItem from="1622050181722" duration="590000" />
-      <workItem from="1622106254296" duration="8802000" />
-      <workItem from="1622137182859" duration="7255000" />
-      <workItem from="1622230155186" duration="625000" />
-      <workItem from="1622576682283" duration="302000" />
+      <workItem from="1622138029910" duration="26000" />
+      <workItem from="1622480828674" duration="2150000" />
+      <workItem from="1622489140587" duration="5248000" />
+      <workItem from="1622564035004" duration="2892000" />
     </task>
     <task id="LOCAL-00001" summary="Versione 0">
       <created>1619454482720</created>
@@ -299,18 +302,18 @@
       <updated>1621544003476</updated>
     </task>
     <task id="LOCAL-00023" summary="Versione 1">
-      <created>1622024799008</created>
+      <created>1622483078859</created>
       <option name="number" value="00023" />
       <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
-      <updated>1622024799008</updated>
+      <updated>1622483078859</updated>
     </task>
     <task id="LOCAL-00024" summary="Versione 1">
-      <created>1622145058527</created>
+      <created>1622483264239</created>
       <option name="number" value="00024" />
       <option name="presentableId" value="LOCAL-00024" />
       <option name="project" value="LOCAL" />
-      <updated>1622145058527</updated>
+      <updated>1622483264239</updated>
     </task>
     <option name="localTasksCounter" value="25" />
     <servers />
