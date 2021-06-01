@@ -14,10 +14,6 @@ $txtEmail = $_POST['mail'];
 $txtType = $_POST['type'];
 $txtSubject = $_POST['subject'];
 
-echo "<br> La tua mail è $txtEmail ";
-echo "<br> Il tipo di richiesta è $txtType ";
-echo "<br> Il testo è $txtSubject";
-
 $conn=OpenCon();
 $sql = "INSERT INTO `Feedbacks` (`fldEmail`, `fldType`, `fldMessage`) VALUES ('".$txtEmail."', '".$txtType."', '".$txtSubject."')";
 $rs = mysqli_query($conn, $sql);
