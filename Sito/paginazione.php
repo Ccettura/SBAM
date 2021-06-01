@@ -1,9 +1,10 @@
 <?php
 
+// MOSTRA I LIBRI APPARTENENTI ALLA PAGINA SELEZIONATA
 function creaLista($result, $numrighe, $limite, $sezione){
     if(isset($_GET['page'])){
         $currentPage=$_GET['page'];
-        $result->data_seek(($currentPage)*$limite);
+        $result->data_seek(($currentPage)*$limite); // Preleva i dati dal primo libro appartenente alla pagina selezionata
         $start=($currentPage)*$limite;
     }
     else{
