@@ -28,7 +28,7 @@ include 'header.php';
             <form name="feedbackForm" method="POST" action='feedbacks.php'>
 
                 <p class="bianco"> <label for="mail"><b>Indirizzo e-mail</b></label></p>
-                <p> <input class="bianco" type="text" id="mail" name="mail" placeholder=""> </p>
+                <p> <input class="bianco" type="text" id="mail" name="mail" placeholder="esempio@provider.it"> </p>
 
 
 
