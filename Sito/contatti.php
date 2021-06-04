@@ -6,7 +6,7 @@ include 'header.php';
 <div class="logoCentrato headline"></div>
 
 
-<!-- FORM PER INVIARE UNA MAIL DI FEEDBACK -->
+<!-- FORM PER INVIARE UN MESSAGGIO DI FEEDBACK -->
 
 <div class="contatti headline">
 
