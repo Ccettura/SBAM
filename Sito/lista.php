@@ -6,8 +6,9 @@
 
 <script src="autocompilazione.js" type="text/javascript"></script>
 
-<div class="sezioneRicerca headline">
+<!-- BARRA DI RICERCA CON AUTOCOMPLETAMENTO -->
 
+<div class="sezioneRicerca headline">
     <div class="instazione_bacheca">
         <h1 class="sottotitoli giallo">CERCA UN LIBRO O UN FUMETTO</h1>
         <p class="paragrafi">Inserisci il titolo o l'isbn di un libro o fumetto per effettuare la ricerca.</p>
@@ -20,6 +21,9 @@
             </div>
     </form>
 </div>
+
+
+<!-- SELEZIONE CATEGORIA -->
 
 <div class="categorie mt2 headline">
     <form action="lista.php" method="GET">
@@ -50,6 +54,8 @@
 <h1 class="sottotitoli giallo centroTesto mt2 headline">LISTA DI LIBRI</h1>
 
 
+<!-- INDICATORE DEI FILTRI ATTIVI -->
+
 <div class="filtra_per mt1">
     <?php
     if((isset($_GET['cat']) and $_GET['cat']!="all") or isset($_GET['search'])){
@@ -78,6 +84,8 @@
     ?>
 </div>
 
+
+<!-- LISTA DEI LIBRI IN BASE AI FILTRI ATTIVI -->
 
 <div class="small-container mt1 headline">
     <?php
@@ -144,59 +152,63 @@
     ?>
 </div>
 
-    <div class="pagination">
-        <?php
 
-        if (isset($_GET['search'])){
-            $search="&search=".$_GET['search'];
-        }
-        else{
-            $search="";
-        }
+<!-- INDICE DELLE PAGINE -->
 
-        if(isset($_GET['cat'])){
-            $categoria="&cat=".$_GET['cat'];
-        }
-        else{
-            $categoria="";
-        }
+<div class="pagination">
+    <?php
 
-        if($sezione!=0){
-            $sez=$sezione-1;
-            $page=10*$sezione-1;
-            echo "<a href='lista.php?page=1&sez=0$search$categoria'>&laquo;</a>";
-            echo "<a href='lista.php?page=$page&sez=$sez$search$categoria'>&lsaquo;</a>";
-            $currentPage=$currentPage+2;
+    if (isset($_GET['search'])){
+        $search="&search=".$_GET['search'];
+    }
+    else{
+        $search="";
+    }
+
+    if(isset($_GET['cat'])){
+        $categoria="&cat=".$_GET['cat'];
+    }
+    else{
+        $categoria="";
+    }
+
+    if($sezione!=0){
+        $sez=$sezione-1;
+        $page=10*$sezione-1;
+        echo "<a href='lista.php?page=1&sez=0$search$categoria'>&laquo;</a>";
+        echo "<a href='lista.php?page=$page&sez=$sez$search$categoria'>&lsaquo;</a>";
+        $currentPage=$currentPage+2;
+    }
+    else{
+        $currentPage=$currentPage-1;
+    }
+    $pagine=ceil($numrighe/$limite);
+    $sezioni=ceil($pagine/10)-1;
+    $pagine=$pagine-1;
+    for($i=$sezione*10; $i<=10*$sezione+10 and $i<=$pagine; $i++){
+        if($i==0){
+            $i=1;
         }
-        else{
-            $currentPage=$currentPage-1;
-        }
-        $pagine=ceil($numrighe/$limite);
-        $sezioni=ceil($pagine/10)-1;
-        $pagine=$pagine-1;
-        for($i=$sezione*10; $i<=10*$sezione+10 and $i<=$pagine; $i++){
-            if($i==0){
-                $i=1;
-            }
-            $sez=floor($i/10);
-            echo "<a href='lista.php?page=$i&sez=$sez$search$categoria'>$i</a>";
-        }
-        if($sezione!=$sezioni and $pagine>=0){
-            echo "<a href='lista.php?page=$pagine&sez=$sezioni$search$categoria'>&raquo;</a>";
-        }
+        $sez=floor($i/10);
+        echo "<a href='lista.php?page=$i&sez=$sez$search$categoria'>$i</a>";
+    }
+    if($sezione!=$sezioni and $pagine>=0){
+        echo "<a href='lista.php?page=$pagine&sez=$sezioni$search$categoria'>&raquo;</a>";
+    }
 
-        ?>
-    </div>
+    ?>
+</div>
 
 
-
-
+<!-- SELETTORE DELLA PAGINA ATTIVA -->
 
 <script>
     var div = document.getElementsByClassName("pagination")[0];
     div.children[<?php echo ($currentPage-10*($sezione)) ?>].classList.add("active");
 </script>
 
+
+<!-- SCRIPT PER L'AUTOCOMPLETAMENTO -->
 
 <?php
 
