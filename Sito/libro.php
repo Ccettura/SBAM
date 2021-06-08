@@ -21,7 +21,7 @@ include 'header.php';
 <div class="container singolo-libro">
     <div class="row">
         <div class="col">
-            <img src="copertine/<?php echo $row['copertina']; ?>" />
+            <img src="copertine/<?php echo $row['copertina']; ?>" alt="Copertina opera" />
         </div>
         <div class="col">
             <h1 class="titoli"><?php echo $row['titolo']; ?></h1>

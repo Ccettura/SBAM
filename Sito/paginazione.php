@@ -18,7 +18,7 @@ function creaLista($result, $numrighe, $limite, $sezione){
         echo "
             <div class='col-5'>
                 <a href='libro.php?cod=" . $row['codiceLibro'] . "'> <p class='sottotitoli'>" . $row['titolo'] . "</p></a>
-                <a href='libro.php?cod=" . $row['codiceLibro'] . "'> <img src='copertine/" . $row['copertina'] . "'/> </a>
+                <a href='libro.php?cod=" . $row['codiceLibro'] . "'> <img alt='Copertina Libro' src='copertine/" . $row['copertina'] . "' /> </a>
             </div>";
     }
     echo "</div>";
