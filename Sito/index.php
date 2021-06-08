@@ -27,7 +27,7 @@
                     <form autocomplete="off" action="lista.php" method="POST">
                         <div class="autocomplete">
                             <div>
-                                <input id="myInput" class="input_codice" atype="text" name="search">
+                                <input id="myInput" class="input_codice" atype="text" name="search" alt="titolo o autore opera">
                                 <button class="button" type="submit" name="submit">Cerca</button>
                             </div>
                         </div>
@@ -59,7 +59,7 @@
                 echo "
                     <div class='col-5'>
                         <a href='libro.php?cod=".$row['codiceLibro']."'> <p class='bianco'>".$row['titolo']."</p></a>
-                        <a href='libro.php?cod=".$row['codiceLibro']."'> <img src='copertine/".$row['copertina']."'/> </a>
+                        <a href='libro.php?cod=".$row['codiceLibro']."'> <img src='copertine/".$row['copertina']."' /> </a>
                     </div>";
             }
             ?>
