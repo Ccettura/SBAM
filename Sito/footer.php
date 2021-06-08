@@ -1,3 +1,5 @@
+<!-- FINE PAGINA -->
+
 <div class="footer">
 
     <div class="social">
