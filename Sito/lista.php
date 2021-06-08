@@ -11,12 +11,12 @@
 <div class="sezioneRicerca headline">
     <div class="instazione_bacheca">
         <h1 class="sottotitoli giallo">CERCA UN LIBRO O UN FUMETTO</h1>
-        <p class="paragrafi">Inserisci il titolo o l'isbn di un libro o fumetto per effettuare la ricerca.</p>
+        <p class="paragrafi">Inserisci il titolo o l'autore di un libro o fumetto per effettuare la ricerca.</p>
     </div>
 
     <form autocomplete="off" action="lista.php" method="GET">
             <div class="autocomplete">
-                <input id="myInput" class="input_codice" atype="text" name="search">
+                <input id="myInput" class="input_codice" atype="text" name="search" alt="Titolo o autore opera">
                 <button class="button" type="submit">Cerca</button>
             </div>
     </form>
@@ -30,7 +30,7 @@
         <div>
             <div class="ricerca_2">
                 <label class="bianco" for="cat">Seleziona una categoria:</label>
-                <select class="bianco" name="cat">
+                <select class="bianco" name="cat" aria-labelledby="categoria">
                     <?php
                     $conn=OpenCon();
                     $search = mysqli_real_escape_string($conn, $_GET['search']);

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02a3c75b-0cd7-4817-99cd-8e4d854b5898" name="Default Changelist" comment="Versione 1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sito/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/index.php" afterDir="false" />
-    </list>
+    <list default="true" id="02a3c75b-0cd7-4817-99cd-8e4d854b5898" name="Default Changelist" comment="Inseriti alt" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -324,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622587272018</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Inseriti alt">
+      <created>1623172008543</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1623172008543</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,6 +354,7 @@
     <MESSAGE value="Aggiunta grafica base e refactorato un paio di file" />
     <MESSAGE value="Try catch" />
     <MESSAGE value="Versione 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Versione 1" />
+    <MESSAGE value="Inseriti alt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inseriti alt" />
   </component>
 </project>
