@@ -8,7 +8,7 @@ function autocomplete(inp, arr) {
         closeAllLists(); // Chiude una possibile lista di autocompletamento già aperta
         if (!val) { return false;}
         currentFocus = -1;
-        /* Crea un elemento DIV che conterrà i seguenti valori:*/
+        /* Crea un elemento DIV che conterrà i seguenti valori: */
         a = document.createElement("DIV");
         a.setAttribute("id", this.id + "autocomplete-list");
         a.setAttribute("class", "autocomplete-items");

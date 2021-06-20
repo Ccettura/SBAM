@@ -33,7 +33,6 @@
                 <select class="bianco" name="cat" aria-labelledby="categoria">
                     <?php
                     $conn=OpenCon();
-                    $search = mysqli_real_escape_string($conn, $_GET['search']); //TODO rivedere
                     $sql = "SELECT nomeCategoria from Categorie";
                     $result = mysqli_query($conn,$sql);
                     echo "<option value='all'>Tutte le categorie</option>";
