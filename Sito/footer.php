@@ -3,9 +3,9 @@
 <div class="footer">
 
     <div class="social">
-        <a href="https://www.facebook.com"><img src="facebook.png" alt="30" height="30" class="facebook"/></a>
-        <a href="https://twitter.com"><img src="twitter.png" alt="30" height="30" class="twitter"/></a>
-        <a href="https://www.instagram.com"><img src="instagram.png" alt="30" height="30" class="instagram"/></a>
+        <a href="https://www.facebook.com"><img src="facebook.png" height="30" class="facebook"/></a>
+        <a href="https://twitter.com"><img src="twitter.png" height="30" class="twitter"/></a>
+        <a href="https://www.instagram.com"><img src="instagram.png" height="30" class="instagram"/></a>
     </div>
 
     <div class="CopyrightEPrivacy">

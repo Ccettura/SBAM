@@ -33,7 +33,7 @@
                 <select class="bianco" name="cat">
                     <?php
                     $conn=OpenCon();
-                    $search = mysqli_real_escape_string($conn, $_GET['search']);
+                    $search = mysqli_real_escape_string($conn, $_GET['search']); //TODO rivedere
                     $sql = "SELECT nomeCategoria from Categorie";
                     $result = mysqli_query($conn,$sql);
                     echo "<option value='all'>Tutte le categorie</option>";
@@ -106,14 +106,14 @@
     }
 
     if (isset($_GET['search'])) {
-        $search = mysqli_real_escape_string($conn, $_GET['search']);
+        $search = mysqli_real_escape_string($conn, $_GET['search']); //Elimina i caratteri speciali dalla stringa di ricerca
         if(isset($_GET['cat'])){
             $categoria = $_GET['cat'];
             if($categoria=='all'){
                 $sql = "SELECT distinct Libri.codiceLibro, titolo, copertina FROM Libri JOIN scrive on Libri.codiceLibro=scrive.codiceLibro JOIN Autori ON Autori.codiceAutore=scrive.codiceAutore WHERE titolo LIKE '%$search%' OR nomecognome LIKE '%$search%'";
             }
             else{
-                $sql = "SELECT distinct Libri.codiceLibro, titolo, copertina FROM Libri JOIN scrive on Libri.codiceLibro=scrive.codiceLibro JOIN Autori ON Autori.codiceAutore=scrive.codiceAutore WHERE titolo LIKE '%$search%' OR nomecognome LIKE '%$search%' OR categoria LIKE '%$categoria%'";
+                $sql = "SELECT distinct Libri.codiceLibro, titolo, copertina FROM Libri JOIN scrive on Libri.codiceLibro=scrive.codiceLibro JOIN Autori ON Autori.codiceAutore=scrive.codiceAutore WHERE titolo LIKE '%$search%' OR nomecognome LIKE '%$search%' AND categoria LIKE '%$categoria%'";
             }
         }
         else{

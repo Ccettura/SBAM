@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02a3c75b-0cd7-4817-99cd-8e4d854b5898" name="Default Changelist" comment="Versione 1">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_06_2021_15_16_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_06_2021_15_16__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sito/lista.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sito/lista.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +71,7 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -76,17 +83,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.contatti.php">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FeedbackPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ASBAM/SBAM/Sito/Pagine/Feedbacks/FeedbackPage.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -152,6 +148,10 @@
       <workItem from="1622564035004" duration="2892000" />
       <workItem from="1622706858821" duration="167000" />
       <workItem from="1623171584494" duration="393000" />
+      <workItem from="1623172130293" duration="527000" />
+      <workItem from="1624096506750" duration="1432000" />
+      <workItem from="1624180198775" duration="4340000" />
+      <workItem from="1624201552932" duration="25000" />
     </task>
     <task id="LOCAL-00001" summary="Versione 0">
       <created>1619454482720</created>
@@ -335,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622587272018</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Versione 1">
+      <created>1623172190426</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1623172190426</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

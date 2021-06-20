@@ -4,9 +4,12 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
+
+    <!-- IMPORTAZIONE FILE CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="stile.css">
 
+    <!-- IMPORTAZIONE GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
 
@@ -21,7 +24,7 @@
 <div class="header">
     <div class="contenuto_header">
         <div class="logo">
-            <a href="index.php"><img src="logo.png" alt="200" height="44"/></a>
+            <a href="index.php"><img src="logo.png" height="44"/></a>
         </div>
 
         <div class="divisore"></div>
@@ -33,6 +36,7 @@
             <li><a class="grigio cool" href="contatti.php">Contatti</a></li>
         </ul>
 
+        <!-- MENU PER SMARTPHONE -->
         <div class="menuBurger" id="menu-bar_burger">
             <div id="menu_burger" onclick="onClickMenu()">
                 <div id="bar1" class="bar"></div>
@@ -55,8 +59,8 @@
 <script src="animanzione_bottone.js"></script>
 
 <script type="text/javascript">
-    const currentLocation = location.href;
-    const menuItem = document.querySelectorAll('a');
+    const currentLocation = location.href; //Restituisce URL della pagina attuale
+    const menuItem = document.querySelectorAll('a'); //Inserisce in menuItem gli elementi del menu sotto forma di lista
     const menuLength = menuItem.length;
 
     for (let i=0; i < menuLength; i++){
